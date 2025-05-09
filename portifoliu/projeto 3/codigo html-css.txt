@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./img/Illustration-3-3.png">
+    <title>Via Mobile</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="section-texto">
+            <div>
+            <h1>Easy Shopping Via Mobile</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam porro maiores amet facere officiis ad
+                quisquam corrupti enim in distinctio, omnis rem nam aliquam, voluptates ducimus molestiae error velit
+                ipsa.</p>
+                <button>Get Started</button>
+           </div>
+            
+
+        </section>
+        <section class="section-menu">
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <img class="img-logo" src="./img/Illustration-3-3.png" alt="Logo">
+        </section>
+    </main>
+</body>
+  <styles>
+/*---------------- Alinhamentos Iniciais---------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.section-texto {
+    display: flex;
+    width: 60%;
+    height: 100%;
+}
+
+.section-menu {
+    display: inline-block;
+    width: 40%;
+    height: 110vh;
+    background-color: rgba(93, 93, 125, 0.16);
+}
+
+div {
+    margin-left: 136px;
+}
+
+img {
+    position: relative;
+    top: 70px;
+    left: -140px;
+    width: 455px;
+    height: 561px;
+}
+
+nav {
+    margin: 24px 57px 0px 57px;
+}
+
+a {
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-right: 41px;
+}
+
+h1 {
+    width: 368px;
+    height: 160px;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0px;
+    margin: 30% 444px 15px 0px;
+}
+
+p {
+    width: 540px;
+    height: 144px;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 38px;
+    letter-spacing: 0px;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    color: white;
+    background-color: #9499EA;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+a:active {
+    opacity: 25%;
+}
+
+button:hover {
+    opacity: 50%;
+}
+
+button:active {
+    opacity: 25%;
+}
+
+
+@media screen and (max-width:900px) {
+
+    main {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+
+        height: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    div {
+        width: auto;
+        height: auto;
+        position: static;
+        left: 10%;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    img {
+        display: block;
+        margin: 0px auto;
+        position: static;
+        left: 20px;
+        width: 271px;
+        height: 322px;
+        top: 443px;
+        left: 51px;
+
+
+
+    }
+
+    .section-texto {
+        display: flex;
+        width: 100%;
+    }
+
+    .section-menu {
+        padding: 40px;
+        display: block;
+        width: 100%;
+        
+
+        background-color: rgba(93, 93, 125, 0.16);
+    }
+
+    h1 {
+        width: auto;
+        height: 104px;
+
+line-height: 52px;
+letter-spacing: 0px;
+
+
+
+        margin: 58px 50px auto 50px;
+        font-size: 36px;
+        text-align: center;
+
+    }
+
+p{
+    width: auto;
+height: 96px;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+margin-top:10px auto;
+
+
+}
+ button{
+    display: block;
+    margin: 0px auto;
+
+}
+</styles>
+</html>

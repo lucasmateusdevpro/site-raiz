@@ -1,0 +1,110 @@
+/* config browser */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #334c5c;
+    outline: none;/* linha azul emvolta dos inputs e select  */
+    appearance: none; /* setas do select */
+}
+
+/* config page */
+body {
+    background-color: #0D1420;
+    align-items: center;
+    text-align: center;
+}
+
+/* Config image */
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+/* Config Container */
+.container {
+    width: 400px;
+    margin: 16px auto 30px auto;
+    border-radius: 20px;
+    padding: 44px;
+
+    background-color: whitesmoke;
+}
+
+.div-select-coin {
+    margin: 0px auto 24px auto;
+    width: 327px;
+    height: 72px;
+    border-bottom: 24px;
+
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.div-result {
+    width: 327px;
+    border: 2px solid #3E7596;
+    border-radius: 20px;
+    margin: 24px auto 0px auto;
+
+}
+
+/* config elemnts */
+
+.select-coin {
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border-width: 1px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    border: 1px solid #BBBBBB;
+    
+
+    cursor: pointer;
+}
+
+.select-coin-button {
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border-width: 1px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    color: white;
+    background-color: #3E7596;
+
+    cursor: pointer;
+    border: none;
+}
+
+p {
+    border-bottom: 10px;
+}
+
+figure {
+    margin: 15px auto;
+}
+
+/* Page appearance */
+
+button,input:hover {
+    opacity: 80%;
+}
+
+butto,input,select:active {
+    opacity: 50%;
+}

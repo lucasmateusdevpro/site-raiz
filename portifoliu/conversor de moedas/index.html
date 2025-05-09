@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo do Conversor de Moedas" />
+        <h1>Conversor de Moedas</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            
+            <form onsubmit="getVolue(); return false;">
+                <div class="div-select-coin">
+                    <label for="selectMoedaDe">Converter <strong>De</strong></label>
+                    <select id="selectMoedaDe" class="select-coin" oninput="select1(this.value)">
+                        <option value="">Selecione Moeda</option>
+                        <option value="realBrasil1">R$ Real Brasileiro</option>
+                        <option value="dolarAmericano1">US$ Dólar Americano</option>
+                        <option value="euro1">€ Euro</option>
+                        <option value="libra1">£ Libra</option>
+                        <option value="bitcoin1">Bitcoin</option>
+                    </select>
+                </div>
+
+                <div class="div-select-coin">
+                    <label for="selectMoedaPara">Converter <strong>Para</strong></label>
+                    <select id="selectMoedaPara" class="select-coin" oninput="select2(this.value)">
+                        <option value="">Selecione Moeda</option>
+                        <option value="realBrasil2">R$ Real Brasileiro</option>
+                        <option value="dolarAmericano2">US$ Dólar Americano</option>
+                        <option value="euro2">€ Euro</option>
+                        <option value="libra2">£ Libra</option>
+                        <option value="bitcoin2">Bitcoin</option>
+                    </select>
+                </div>
+
+                <div class="div-select-coin">
+                    <label for="valueEntered">Valor</label>
+                    <input id="valueEntered" class="select-coin" type="number" placeholder="0,00" />
+                </div>
+
+                <button type="submit" class="select-coin-button" id="meuBotao">Converter</button>
+            </form>
+
+            <section class="div-result">
+                <figure>
+                    <img id="minhaImagem1" src="img/imginicial.png" width="44" height="44" alt="Moeda de origem" />
+                    <figcaption id="texto1">Selecione Moeda</figcaption>
+                    <figcaption id="volueResult1"></figcaption>
+                </figure>
+
+                <img src="img/seta3.PNG" width="40" height="50" alt="Seta indicando conversão" />
+
+                <figure>
+                    <img id="minhaImagem2" src="img/imginicial.png" width="44" height="44" alt="Moeda de destino" />
+                    <figcaption id="texto2">Selecione Moeda</figcaption>
+                    <figcaption id="volueResult2"></figcaption>
+                </figure>
+            </section>
+
+            <section class="div-result">
+                <p><strong>Valor das moedas</strong></p>
+                <p><strong id="volueSelect1">---: -.--</strong></p>
+                <p><strong id="volueSelect2">---: -.--</strong></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conversor de Moedas</p>  
+        <p>Lucas Mateus S I Leal</p><br><br>
+    </footer>
+</body>
+
+</html>

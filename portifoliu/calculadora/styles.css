@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+.container{
+    margin: 50px;
+    background-color: rgb(32, 32, 32);
+    width: 900px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+
+}
+.inputs{
+    margin:50px auto 50px auto;
+    display: block ;
+}
+input{
+    font-size: 50px;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    padding: auto;
+    margin: 20px;
+}
+
+.div-resultado{
+    color: white;
+    font-size: 50px;
+   padding: 40px;
+}
+
+button{
+    font-size: 50px;
+    color: white;
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    margin: 40px;
+}
+
+h1{
+    color: white;
+     font-size: 100px;
+    padding: 40px;
+}
+.botoes{
+    display: flex;
+}

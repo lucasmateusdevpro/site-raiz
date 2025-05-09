@@ -1,0 +1,199 @@
+/*----------------------------zerando navegador---------------------------------Não mudar----*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;/*tirando a linha dos links*/
+    font-family: "Manrope", sans-serif; /*fonte dos textos*/
+    color: #3F7597; /*cor padrão das tetras*/
+    background-color: #0E1521; /*cor da pagina*/
+    
+}
+
+/* ----------------------------------   cabeça do site ---------------------Não mudar----------*/
+
+header {
+    display: flex;
+    border-bottom: solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#h1-header {
+    font-size: 28px;
+}
+
+nav {
+    font-size: 27px;
+    align-items: right;
+    margin-left: 35%;
+}
+
+.a-nav {
+    margin-left: 70px;
+}
+
+a:hover {
+    opacity: 60%;
+}
+
+a:active {
+    opacity: 30%;
+}
+
+/* -------------------------------------------corpo da pagina---------------------------Tudo acontese aqui-----*/
+
+main {
+    text-align: center; /* alinhando os testos na tela */
+}
+
+.container-home{
+    height: 650px; /* Tamanho da tela */
+}
+
+.container-texto-digitando {
+    font-size: 24px;
+    color: #333;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+}
+
+/* O texto que será "digitado" */
+.texto-digitando {
+    display: inline-block;
+    border-right: 3px solid black;   
+    white-space: nowrap; /* Simulando o cursor */   
+    overflow: hidden;/* Impede a quebra de linha */  
+    width: 0; /* Esconde o texto que não foi "digitado" ainda */
+    animation: digitar 4s steps(30) 1s forwards, cursor 0.75s step-end infinite; /* Inicialmente a largura do texto é zero */
+}                    /*  */
+
+.img-central {
+    height: auto; /* Tamanho da imagem */
+    filter: blur(3px);  /*comando usado para desfoque*/ 
+    opacity: 30%; /* deixando a imagem opaca */
+    display: block;
+    position: absolute;/* deixar a imagem no meio */
+    left: 30%;
+    top: 20%;
+}
+
+.tilulos-pagina{ /*h2*/
+    font-size: 50px;
+}
+
+/* ------------------------------------Pagina Portifólio----------------------------Não Mudar---*/
+
+section{
+    display:block;
+}
+
+.div-linha{
+
+    display: flex;
+}
+.projetos-div{
+    padding: 20px;
+    width: 450px;
+}
+
+.link-img-pequena{
+    width: 410px;
+    padding: 15px;
+}
+.link-codigos{
+
+    color: red;
+}
+/* ------------------------------------Pagina sobre----------------------------Não Mudar---*/
+
+.div-sobre-mim{
+    font-size: 20px;
+    width: auto;
+    margin: 30px;
+}
+.section-sobre-mim{
+    display: flex;
+    margin:50px 30px 30px 30px;
+}
+
+.img-section-sobre-mim{
+
+    height: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------Pé da pagina--------------------------------------Não Mudar---*/
+.texto-footer {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    border-top: solid black;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.img-footer {
+    width: 70px;
+
+
+}
+
+figure {
+    margin-left: 70%;
+    text-align: center;
+    font-size: 10px;
+}
+
+/*------------------------Animação para o efeito de digitação --------------------------------------*/
+
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Efeito do cursor piscando */
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}

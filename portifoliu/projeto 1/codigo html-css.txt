@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" href="./img/Illustration 2.png"" type=" image/png">
+    <title>WE CARE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="ul-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <button class="button-nav">LOG IN</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <img src="./img/Illustration 2.png" alt="">
+            </article>
+            <article class="article-texto">
+                <h1>WE CARE</h1>
+                <h2>About Your Pet</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus modi recusandae commodi illum
+                    voluptate ex error mollitia maxime minima omnis? Placeat itaque beatae ipsa dolorem tenetur harum id
+                    laboriosam provident?</p>
+                <button class="button-section">EXPLORE</button>
+
+            </article>
+    </main>
+</body>
+<style>
+/*---------------- Alinhamentos Iniciais---------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    /* tirar os pontos da lista */
+
+}
+
+/*---------------- Cabeça da Pagina ---------------- */
+body {
+
+    width: 1440px;
+    height: 900px;
+    top: -1367px;
+    left: -3216px;
+
+}
+
+nav {
+    display: flex;
+
+    margin: 44px auto auto 76px;
+
+}
+
+ul {
+    display: flex;
+    font-size: 24px;
+}
+
+a {
+    color: #989D9C;
+    margin-right: 23px;
+}
+
+.button-nav {
+    font-size: 24px;
+    color: white;
+    background-color: #665AE1;
+    width: 130px;
+    height: 41px;
+    border-radius: 20.5px;
+    border: none;
+}
+
+
+
+/*---------------- Corpo da Pagina ---------------- */
+
+section {
+    display: flex;
+
+    color: #515151;
+
+}
+
+
+img {
+
+    top: -1150px;
+    left: -3091px;
+
+    margin: 144px 86px 182px 125px;
+    width: 568px;
+    height: 500px;
+
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 98px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 217px 148px 0px 0px;
+    width: 513px;
+    height: 122px;
+    top: -1150px;
+    left: -2437px;
+
+
+
+}
+
+h2 {
+    margin-bottom: 32px;
+    font-size: 52px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 65px;
+    width: 515px;
+    height: 87px;
+    margin-bottom: 80px;
+
+
+}
+
+.button-section {
+    width: 239px;
+    height: 64px;
+    border-radius: 50px;
+    font-size: 28px;
+    background-color: #ADFF00;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+}
+
+</style>
+</html>

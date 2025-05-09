@@ -1,0 +1,231 @@
+/*---------------- Alinhamentos Iniciais---------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/*---------------- Cabeça do site ---------------- */
+
+.button-responsivo {
+    display: none;
+}
+
+nav {
+    display: flex;
+    margin: 37px auto auto 42px;
+    align-items: center;
+}
+
+.button-menu {
+    width: 124px;
+    height: 51px;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: #6FBF44;
+    border: 1px solid #4CB538;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+/*---------------- corpo do site ---------------- */
+
+.article-responsivo {
+    display: none;
+}
+
+main {
+    display: flex;
+}
+
+img {
+    width: 534px;
+    margin: 140px 84px 102px 120px;
+}
+
+h1 {
+    width: 582px;
+    height: 164px;
+    margin: 210px 0px 43px 0px;
+    color: #161A49;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    letter-spacing: 0.6px;
+}
+
+p {
+    width: 493px;
+    height: 99px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    color: #161A49;
+    margin-bottom: 55px;
+}
+
+.link-menu {
+    margin-right: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #161A49;
+}
+
+
+.link-button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #6FBF44;
+}
+
+
+/*---------------- animação do site ---------------- */
+
+button:hover {
+    opacity: 70%;
+}
+
+button:active {
+    opacity: 30%;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+a:active {
+    opacity: 30%;
+}
+
+
+/*---------------- responcividade do site ---------------- */
+@media (max-width: 1200px) {
+    .button-menu {
+        margin-left: 40%;
+    }
+
+    .button-responsivo {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    /*---------------- corpo do site ---------------- */
+    .article-normal {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .article-responsivo {
+        display: none;
+    }
+
+    main {
+        display: block;
+        margin: auto auto;
+    }
+
+    img {
+        display: block;
+        width: 534px;
+        margin: 140px auto 102px auto;
+    }
+
+    h1 {
+        width: 700px;
+        height: 164px;
+        margin: auto auto;
+        font-size: 62px;
+        line-height: 82px;
+        letter-spacing: 0.6px;
+    }
+
+    p {
+        margin: 30px auto 30px auto;
+        width: 304px;
+        height: 165px;
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    .link-button {
+        width: 112px;
+        height: 27px;
+    }
+}
+
+@media (max-width: 900px) {
+    /*---------------- cabeça do site ---------------- */
+
+    .button-responsivo {
+        display: block;
+        margin-left: 65%;
+        width: 91px;
+        height: 31px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /*---------------- corpo do site ---------------- */
+    .article-normal {
+        display: none;
+    }
+
+    .article-responsivo {
+        display: block;
+        margin: auto auto;
+        width: 278px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        display: block;
+        margin: 59px auto 80px auto;
+        width: 312px;
+        height: 288px;
+    }
+
+    h1 {
+        margin-top: 76px;
+        width: 278px;
+        height: 60px;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+    }
+
+    p {
+        width: 304px;
+        height: 165px;
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    .link-button {
+        width: 112px;
+        height: 27px;
+    }
+}
