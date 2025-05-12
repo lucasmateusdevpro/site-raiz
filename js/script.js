@@ -32,13 +32,15 @@ window.addEventListener("DOMContentLoaded", function () {
 
     if (corSalva === "white") {
         document.body.style.background = "#FFFFFF";
-        document.getElementById("logo1").src = "assets/logo1.png";
-        document.getElementById("logo2").src = "assets/logo2.png";
+        document.getElementById("logo1").src = "assets/images/logo1.png";
+        document.getElementById("logo2").src = "assets/images/baner.png"
+        document.getElementById("favicon").href = "assets/favicon/favicon.ico"
     }
 
     if (corSalva === "black") {
         document.body.style.background = "#1F262E";
-        document.getElementById("logo1").src = "assets/logo1black.png";
-        document.getElementById("logo2").src = "assets/logo2black.png";
+        document.getElementById("logo1").src = "assets/images/logo1-black.png"
+        document.getElementById("logo2").src = "assets/images/baner-black.png"
+        document.getElementById("favicon").href = "assets/favicon/favicon-black.ico"
     }
 });
