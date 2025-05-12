@@ -1,0 +1,32 @@
+/meu-site
+|-- index.html               # Página principal
+|-- sobre.html               # Página sobre
+|-- contato.html             # Página de contato
+|-- /assets                  # Pasta para recursos estáticos (imagens, fontes, etc.)
+|   |-- /images              # Imagens do site
+|   |   |-- logo.png         # Logo
+|   |   |-- banner.jpg       # Exemplo de imagem
+|   |   |-- foto1.jpg        # Outra imagem
+|   |   |-- ...
+|   |
+|   |-- /fonts               # Fontes (caso você tenha fontes personalizadas)
+|   |   |-- roboto.ttf       # Exemplo de fonte
+|   |   |-- ...
+|
+|-- /css                     # Arquivos CSS
+|   |-- style.css            # Estilo principal
+|   |-- responsive.css       # Estilo responsivo (se necessário)
+|   |-- ...
+|
+|-- /js                      # Arquivos JavaScript
+|   |-- script.js            # Script principal
+|   |-- functions.js         # Funções auxiliares
+|   |-- ...
+|
+|
+|-- /assets                  # (opcional) Outros recursos estáticos
+|   |-- favicon.ico          # Favicon do site
+|   |-- robots.txt           # Arquivo robots.txt
+
+|-- README.md                # Documentação do projeto
+|-- .gitignore               # Arquivos ou pastas a serem ignoradas pelo git

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -24,25 +25,73 @@
             <a href="#" class="link-menu">Log in</a>
             <button class="button-menu">Sign up</button>
         </nav>
+        <nav class="button-responsivo">
+            <button class="button-menu">Sign up</button>
+
+        </nav>
     </header>
     <main>
-        <section>
-            <article>
-                <figure>
-                    <img src="img/(Positive) Congratulation You get 40 point for your ride.svg" alt="logo">
 
-                </figure>
-            </article>
-            <article>
-                <h1>Wide coverage location</h1>
-                <p>Shared rides, There’s lots to do in your city, and we’ve got the rides to help you enjoy it all. And
-                    they’re all available right from your app.</p>
-                <a href="#" class="link-button">Learn more</a>
-            </article>
-        </section>
+        <article class="article-responsivo">
+            <h1>Wide coverage location</h1>
+            <p>Shared rides, There’s lots to do in your city, and we’ve got the rides to help you enjoy it all. And
+                they’re all available right from your app.</p>
+            <a href="#" class="link-button">Learn more</a>
+        </article>
+
+        <article>
+            <img src="img/(Positive) Congratulation You get 40 point for your ride.svg" alt="logo">
+
+        </article>
+
+        <article class="article-normal">
+            <h1>Wide coverage location</h1>
+            <p>Shared rides, There’s lots to do in your city, and we’ve got the rides to help you enjoy it all. And
+                they’re all available right from your app.</p>
+            <a href="#" class="link-button">Learn more</a>
+        </article>
+
     </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
-<style>  
+<style>
 /*---------------- Alinhamentos Iniciais---------------- */
 * {
     margin: 0px;
@@ -51,30 +100,46 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
-body{
 
+/*---------------- Cabeça do site ---------------- */
 
-
+.button-responsivo {
+    display: none;
 }
-
-/*---------------- Cabeça da Pagina ---------------- */
 
 nav {
     display: flex;
-    margin: 47px auto auto 42px;
+    margin: 37px auto auto 42px;
     align-items: center;
-
 }
 
-section {
+.button-menu {
+    width: 124px;
+    height: 51px;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: #6FBF44;
+    border: 1px solid #4CB538;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+/*---------------- corpo do site ---------------- */
+
+.article-responsivo {
+    display: none;
+}
+
+main {
     display: flex;
 }
 
 img {
     width: 534px;
-    height: 467px;
-    margin: 160px 84px 102px 120px;
-
+    margin: 140px 84px 102px 120px;
 }
 
 h1 {
@@ -88,7 +153,7 @@ h1 {
     letter-spacing: 0.6px;
 }
 
-p{
+p {
     width: 493px;
     height: 99px;
     font-weight: 400;
@@ -98,34 +163,166 @@ p{
     color: #161A49;
     margin-bottom: 55px;
 }
+
 .link-menu {
     margin-right: 32px;
     font-weight: 400;
     font-size: 14px;
     color: #161A49;
-
 }
 
-.button-menu {
-    width: 124px;
-    height: 51px;
-    border-radius: 6px;
-    border-width: 1px;
-    background-color: #6FBF44;
-    border: 1px solid #4CB538;
+
+.link-button {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 100%;
     letter-spacing: 1px;
-    color: white;
+    color: #6FBF44;
 }
 
-.link-button{
-font-weight: 500;
-font-size: 18px;
-line-height: 100%;
-letter-spacing: 1px;
-color: #6FBF44;
+
+/*---------------- animação do site ---------------- */
+
+button:hover {
+    opacity: 70%;
+}
+
+button:active {
+    opacity: 30%;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+a:active {
+    opacity: 30%;
+}
+
+
+/*---------------- responcividade do site ---------------- */
+@media (max-width: 1200px) {
+    .button-menu {
+        margin-left: 40%;
+    }
+
+    .button-responsivo {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    /*---------------- corpo do site ---------------- */
+    .article-normal {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .article-responsivo {
+        display: none;
+    }
+
+    main {
+        display: block;
+        margin: auto auto;
+    }
+
+    img {
+        display: block;
+        width: 534px;
+        margin: 140px auto 102px auto;
+    }
+
+    h1 {
+        width: 700px;
+        height: 164px;
+        margin: auto auto;
+        font-size: 62px;
+        line-height: 82px;
+        letter-spacing: 0.6px;
+    }
+
+    p {
+        margin: 30px auto 30px auto;
+        width: 304px;
+        height: 165px;
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    .link-button {
+        width: 112px;
+        height: 27px;
+    }
+}
+
+@media (max-width: 900px) {
+    /*---------------- cabeça do site ---------------- */
+
+    .button-responsivo {
+        display: block;
+        margin-left: 65%;
+        width: 91px;
+        height: 31px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /*---------------- corpo do site ---------------- */
+    .article-normal {
+        display: none;
+    }
+
+    .article-responsivo {
+        display: block;
+        margin: auto auto;
+        width: 278px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        display: block;
+        margin: 59px auto 80px auto;
+        width: 312px;
+        height: 288px;
+    }
+
+    h1 {
+        margin-top: 76px;
+        width: 278px;
+        height: 60px;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+    }
+
+    p {
+        width: 304px;
+        height: 165px;
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    .link-button {
+        width: 112px;
+        height: 27px;
+    }
 }
 </style>
+
 </html>
