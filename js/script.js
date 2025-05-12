@@ -5,18 +5,21 @@ function selectCor1(valor) {
     const img1 = document.getElementById("logo1")
     const img2 = document.getElementById("logo2")
     const body = document.getElementsByTagName("body")
+    const favicon = document.getElementById("favicon")
 
     if (valor === "white") {
-        img1.src = "assets/logo1.png"
-        img2.src = "assets/logo2.png"
+        favicon.href = "assets/favicon/favicon.ico"
+        img2.src = "assets/images/baner.png"
+        img1.src = "assets/images/logo1.png"
         document.body.style.background = "#FFFFFF";
         localStorage.setItem("corSelecionada", "white"); 
 
     }
 
     if (valor === "black") {
-        img1.src = "assets/logo1black.png"
-        img2.src = "assets/logo2black.png"
+        favicon.href = "assets/favicon/favicon-black.ico"
+        img2.src = "assets/images/baner-black.png"
+        img1.src = "assets/images/logo1-black.png"
         document.body.style.background = "#1F262E";
         localStorage.setItem("corSelecionada", "black"); 
 
