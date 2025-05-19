@@ -1,15 +1,30 @@
-/* Formatação do navegador */
-* {
+ /* Formatação do navegador  */
+ * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none; /* Tira as linhas dos links */  
-    font-family: "Roboto", sans-serif; /* fonte padrao da pagina */
+   box-sizing: border-box;
+    text-decoration: none;  /* Tira as linhas dos links   */
+    font-family: "Roboto", sans-serif;  /* fonte padrao da pagina  */
     color: #188EEB;
+     border-collapse: collapse;
+    line-height: 1.5;
+    webkit-text-size-adjust: 100%;
+    moz-tab-size: 4;
+    o-tab-size: 4;
+    tab-size: 4;
+
+} 
+ 
+
+
+
+html {
 
 }
 
-/* --------------------------------------menus------------------------------------------------------------ */
+
+/* 
+-------------------------------------menus------------------------------------------------------------ */
 .div-menu {
     display: block;
     margin: auto;
@@ -38,6 +53,9 @@ nav {
 }
 
 .main-home {
+      position: fixed;
+  pointer-events: none;
+  transition: transform 0.1s ease;
     display: flex;
 }
 
@@ -79,17 +97,20 @@ nav {
     
 }
 
-
+a {
+     font-weight: bolder;
+    color: inherit !important;
+    text-decoration: inherit;
+}
 
 /* ------------------------animação-------------------------------------------------------------- */
-a:hover {
+a:hover { 
     opacity: 60%;
 }
 
 a:active {
     opacity: 30%;
 }
-
 
 
 

@@ -1,0 +1,38 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+
+}
+
+section{
+    display:block;   
+    align-items: center;
+    text-align: center;
+}
+h1{
+    margin:50px;
+    font-size: 50px;
+}
+h2{
+margin:30px;
+    font-size: 100px;
+}
+button{
+    width: 200px;
+    border: solid 2px ;
+    padding: 10px;
+    margin: 30px;
+    font-size: 40px;
+}
+
+button:hover{
+    opacity:70%;
+}
+button:active{
+
+    opacity: 40%;
+}
