@@ -18,8 +18,9 @@ html {
  }
 
  main {
+    height: 100%;
      z-index: 1; 
-    padding:5%  5% 50px  39%;
+    padding:5%  40px 50px  39%;
      margin: 0px;
  }
 
@@ -48,62 +49,26 @@ html {
  }
 
  .logo1 {
-     font-size: 50px;
+     font-size: 250%;
      margin: 0px 10%;
      color: #f1f1f1;
  }
 
  .logo2 {
-     font-size: 20px;
+     font-size: 100%;
      margin: 0px 0px 0px 30%;
      color: #d3d2d2;
  }
 
  .logo3 {
 
-     font-size: 20px;
+     font-size: 100%;
      margin: 30px 0px 150px 30%;
      color: #9c9b9b;
  }
 
- .header-link {
-     display: block;
-     width: 50px;
-     font-size: 25px;
-     margin: 0px 0px 20px 10%;
- }
-
-
- #linkSobre.ativo {
-     text-decoration: #38BDF8 underline;
-     opacity: 90%;
- }
-
- #sobreLinha {
-     display: none;
- }
-
- #sobreLinha.ativo {
-     display: inline;
- }
-
-
- #linkProjetos.ativo {
-     text-decoration: #38BDF8 underline;
-     opacity: 90%;
- }
-
- #projetosLinha {
-     display: none;
- }
-
- #projetosLinha.ativo {
-    background-color: transparent;
-     display: inline;
- }
 
  /* ------------------------------ sobre ------------------ */
-
 
  .titulo-sobre,
  .titulo-prjetos {
@@ -141,8 +106,8 @@ html {
  .img-projetos {
      border-radius: 10px;
      margin-left: 5px;
-     width: 200px;
-     height: 115px;
+     width: 180px;
+     height: 100px;
      cursor: pointer;
  }
 
@@ -152,13 +117,14 @@ html {
  }
 
  .li-projetos {
-    margin: 20px;
+    padding: 10px 30px 13px 10px;
+    margin: 10px 0px 10px 0px;
      align-items: center;
      display: flex;
  }
 
  .div-projetos {
-     margin: 20px;
+     margin: 10px 0px 10px 10px;
      background-color: transparent;
  }
 
@@ -177,26 +143,48 @@ font-size: 25px;
 
 }
 
+@media screen and (max-width:1370px) { 
+     main {
+    
+     z-index: 1; 
+    padding:5%  40px 50px  39%;
+     margin: 0px;
+ }
+ .titulo-sobre,
+ .titulo-prjetos {
+     font-size: 27px;
+     margin: 0px 0px 10px 0px;
+     cursor: default;
+ }
 
-#linkNovaProjetos.ativo{
-margin: 50px;
-
-color:rgba(56, 191, 248, 0.33);
-
-
- 
+ .texto-sobre {
+    opacity: 80%;
+     text-align: justify;
+     font-size: 19px;
+     margin: 0px 0px 30px 0px;
+     cursor: default;
+     color: red;
+ }
+ .img-projetos {
+     border-radius: 10px;
+     margin-left: 5px;
+     width: 150px;
+     
+     cursor: pointer;
+ }
+  .li-projetos {
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
+     align-items: center;
+     display: flex;
+ }
+  .titulo-projetos-li {
+     font-size: 23px;
+     background: transparent;
+ }
 }
+@media screen and (max-width:1370px){
 
-#linkNovaProjetosSpan.ativo{
-    color:rgb(0, 179, 255);
- display: inline-block; /* IMPORTANTE: span é inline por padrão */
-  transform: translateX(40px); /* Move horizontalmente */
-  transition: transform 0.5s ease;
+    
 }
-#linkNovaProjetosSpan{
-transition: transform 0.5s ease;
-
-}
-
-
 
