@@ -1,121 +1,275 @@
- /* Formatação do navegador  */
- * {
-    margin: 0px;
-    padding: 0px;
-   box-sizing: border-box;
-    text-decoration: none;  /* Tira as linhas dos links   */
-    font-family: "Roboto", sans-serif;  /* fonte padrao da pagina  */
-    color: #188EEB;
-     border-collapse: collapse;
-    line-height: 1.5;
-    webkit-text-size-adjust: 100%;
-    moz-tab-size: 4;
-    o-tab-size: 4;
-    tab-size: 4;
-
-} 
- 
-
-
 
 html {
-
+  scroll-behavior: smooth;
 }
 
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style-type: none;
+     font-family: "Ancizar Serif", serif;
+     background-color: #0F172A;
+     color: #ffffff;
+ }
 
-/* 
--------------------------------------menus------------------------------------------------------------ */
-.div-menu {
-    display: block;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    align-items: center;
+ main {
+    height: 100%;
+     z-index: 1; 
+    padding:5%  40px 50px  39%;
+     margin: 0px;
+ }
 
-}
 
-nav {
-    display: flex;
-    
-}
-
-.link-menu {
-
-    margin: 0px 10px 0px 10px;
-    font-size: 25px;
-}
-
-/*--------------------------------------- main Home ---------------------------------------------------------- */
-#responcivo {
-    display: none;
-
-    opacity: 50%;
-}
-
-.main-home {
-      position: fixed;
+#fundoEfeito {
+  position: fixed;
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 191, 248, 0.116), transparent 70%);
   pointer-events: none;
-  transition: transform 0.1s ease;
-    display: flex;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
 }
 
-.sectionLeft {
-    margin: 90px auto auto 30px;
+
+ /* ------------------------------ Menu ------------------- */
+ .menu-lateral {
+    margin-top: 5%;
+     display: block;
+     position: fixed;
+     border: auto;
+     width: 30%;
+     height: 100%;
+     
+ }
+.header-link{
+width: 130px;
+}
+ .logo1 {
+    cursor: default;
+     font-size: 250%;
+     margin: 0px 10%;
+     color: #f1f1f1;
+ }
+
+ .logo2 {
+    cursor: default;
+     font-size: 100%;
+     margin: 0px 0px 0px 30%;
+     color: #d3d2d2;
+ }
+
+ .logo3 {
+  cursor: default;
+     font-size: 100%;
+     margin: 30px 0px 150px 10%;
+     color: #9c9b9b;
+ }
+/*                     contatos */
+.linckContatos{
+    width: 35px;
+margin: 160px 0px auto 10%;
+
+}
+.imgContatos{
+    width: 30px;
+}
+.linckContatos:ative{
+opacity: 10%;
+
+}
+.linckContatos:hover{
+opacity: 70%;
+
 }
 
-.texto-section {
+ /* ------------------------------ sobre ------------------ */
 
-    opacity: 50%;
+ .titulo-sobre,
+ .titulo-prjetos {
+     font-size: 30px;
+     margin: 0px 0px 10px 0px;
+     cursor: default;
+ }
+
+ .texto-sobre {
+    opacity: 80%;
+     text-align: justify;
+     font-size: 21px;
+     margin: 0px 0px 30px 0px;
+     cursor: default;
+ }
+
+
+ .texto-sobre:hover {
+
+     transform: translateX(10px);
+ }
+
+ .titulo-sobre:hover {
+
+     transform: translateX(10px);
+ }
+
+
+ /* ------------------------------ projetos ------------------ */
+
+ .img-projetos {
+     border-radius: 10px;
+     margin-left: 5px;
+     width: 180px;
+     height: 100px;
+     cursor: pointer;
+ }
+
+ .ul-projetos {
+
+     text-align: left;
+ }
+
+ .li-projetos {
+    padding: 10px 30px 13px 10px;
+    margin: 10px 0px 10px 0px;
+     align-items: center;
+     display: flex;
+ }
+
+ .div-projetos {
+     margin: 10px 0px 10px 10px;
+     background-color: transparent;
+ }
+
+ .titulo-projetos-li {
+     font-size: 27px;
+     background: transparent;
+ }
+
+ .texto-projetos {
+     color: #9c9b9b;
+     background-color: transparent;
+ }
+#linkNovaProjetos{
+margin: 50px;
+font-size: 25px;
+
 }
 
-#texto-section-1 {
-    font-size: 100px;
+@media screen and (max-width:1370px) { 
+     main {   
+     z-index: 1; 
+    padding:5%  40px 50px  39%;
+     margin: 0px;
+ }
+ .linckContatos{
+margin: 140px 0px auto 30px;
+padding: 10px;
 }
+ .titulo-sobre,
+ .titulo-prjetos {
+     font-size: 27px;
+     margin: 0px 0px 10px 0px;
+     cursor: default;
+ }
 
-#texto-section-2 {
-    font-size: 60px;
-    margin: 40PX 80px;
+ .texto-sobre {
+    opacity: 80%;
+     text-align: justify;
+     font-size: 19px;
+     margin: 0px 0px 30px 0px;
+     cursor: default;
+    
+ }
+ .img-projetos {
+     border-radius: 10px;
+     margin-left: 5px;
+     width: 150px;
+     
+     cursor: pointer;
+ }
+  .li-projetos {
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
+     align-items: center;
+     display: flex;
+ }
+  .titulo-projetos-li {
+     font-size: 23px;
+     background: transparent;
+ }
 }
-
-#texto-section-3 {
-    font-size: 70px;
-    margin-left: 120px;
-}
-
-/*--------------------------------------imagens/ home ---------------------------------------------------- */
-.logo1 {
-    margin-top: 80px;
-    width: 100%;
-    opacity: 30%;
+@media screen and (max-width:1025px){
+     main {   
+     z-index: 1; 
+    padding:5%  40px 50px  39%;
+     margin: 0px;
     
 }
+ .logo1 {
+     font-size: 150%;
+ }
 
-.logo2 {
-    margin-top: 10px;
-    width: 100%;
-     opacity: 30%;
+ .logo2 {
+     font-size: 50%;
+ }
+
+ .logo3 {
+  cursor: default;
+     font-size: 60%;
+     margin: 30px 0px 150px 10%;
+     color: #9c9b9b;
+ }
+.linckContatos{
+    width: 28px;
+margin: 560px 0px auto 10%;
+
+}
+}
+
+@media screen and (max-width:500px){
+ .menu-lateral {
+    margin-top: 5%;
+     display: flex;
+     position: none;
+     border: 0px;
+     width: 30%;
     
+     
+ }
+  .container-sobre {
+     display: block;
+     margin-bottom: 0px;
+ }
+
+ .header-link{
+width: 130px;
 }
+ .logo1 {
+    cursor: default;
+     font-size: 50%;
+     margin: 0px 10%;
+     color: #f1f1f1;
+ }
 
-a {
-     font-weight: bolder;
-    color: inherit !important;
-    text-decoration: inherit;
+ .logo2 {
+    cursor: default;
+     font-size: 100%;
+     margin: 0px 0px 0px 30%;
+     color: #d3d2d2;
+ }
+
+ .logo3 {
+  cursor: default;
+     font-size: 100%;
+     margin: 30px 0px 150px 10%;
+     color: #9c9b9b;
+ }
+/*                     contatos */
+.linckContatos{
+    width: 35px;
+margin: 160px 0px auto 10%;
+
 }
-
-/* ------------------------animação-------------------------------------------------------------- */
-a:hover { 
-    opacity: 60%;
 }
-
-a:active {
-    opacity: 30%;
-}
-
-
-
-
-
-
-
-
