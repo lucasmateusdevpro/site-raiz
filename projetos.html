@@ -2,168 +2,212 @@
 <html lang="pt-br">
 
 <head>
-    <link id="favicon" rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <title id="titleFavicon">Lucas S.I.L-Projetos</title>
+    <link rel="shortcut icon" href="assets/favicon/icone.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/projetos.css">
-    <script src="js/script2.js"></script>
+    
+
 </head>
 
-<body id="corDaPagina">
-    <header>
-        <nav>
-            <div class="div-menu">
-                <a href="index2.html" class="link-menu">Home</a>
-                <a href="projetos.html" class="link-menu">Projetos</a>
-                <a href="sobre.html" class="link-menu">Sobre</a>
-                <a href="contato.html" class="link-menu">Contato</a>
-                <select id="selectCor" onchange="selectCor1(this.value)">
-                    <option value="">Thema</option>
-                    <option value="white">white</option>
-                    <option value="black">black</option>
-                </select>
+<body >
+
+    <div id="fundoEfeito"></div>
+
+    <head>
+        <div class="menu-lateral">
+            <h1 class="logo1">
+                < / > Lucas S.I.L
+            </h1>
+            <p class="logo2">Desenvolvedor Front End </p>
+            <p class="logo3">Atualmente trabalho com as ferramentas HTML,CSS e JavaScript.</p>
+            <div class="linckNavegacao">
+                <a class="header-link" href="#sobre" style="display: block; margin: 0px 0px 10px 10%; font-size: 25px;">
+                    <p id="linkSobre"> Sobre <span id="sobreLinha"
+                            style=" display: inline-block; background-color: transparent; font-size: 20px; "> ➔</span>
+                    </p>
+                </a>
+                <a class=" header-link" href="#projetos"
+                    style="display: block; margin: 0px 0px 10px 10%; font-size: 25px;">
+
+                    <p id="linkProjetos">Projetos <span id="projetosLinha"
+                            style=" display: inline-block; background-color: transparent; font-size: 20px; "> ➔
+                        </span></p>
+                </a>
             </div>
-        </nav>
-    </header>
-    <main>
+            <div class="contatos" style="display: flex;">
 
-        <section class="section-projeto">
-
-            <div class="container-projeto">
-
-                <!-- Projeto 1 -->
-
-                <div class="projeto">
-                    <p class="projeto-titulo">About Your Pet</p>
-                    <a href="assets/projetos/About Your Pet/index.html"><img class="projeto-img"
-                            src="assets/projetos/About Your Pet/img/Captura de tela 2025-04-23 230832.png" alt=""></a>
-                    <p class="projeto-descricao">Este foi um dos meus primeiros sites feitos, porem ele passou por
-                        algumas
-                        atualizações e também já esta responsivo, por ser apenas um modelo de apresentação ele não
-                        possui
-                        funções uteis nos botões</p>
-                    <a href="assets/projetos/About Your Pet/codigo html-css.txt"
-                        class="link-projeto-codigo-fonte">Codigo
-                        Fonte</a>
-                </div>
-
-                <!-- Projeto 2 -->
-
-                <div class="projeto">
-                    <p class="projeto-titulo">Wide coverage location</p>
-                    <a href="assets/projetos/Wide coverage location/index.html"><img class="projeto-img"
-                            src="assets/projetos/Wide coverage location/img/Captura de tela 2025-04-24 004547.png"
-                            alt=""></a>
-                    <p class="projeto-descricao">Este foi um dos meus primeiros sites feitos, porem ele passou por
-                        algumas
-                        atualizações e também já esta responsivo, por ser apenas um modelo de apresentação ele não
-                        possui
-                        funções uteis nos botões</p>
-                    <a href="assets/projetos/Wide coverage location/codigo html-css.txt"
-                        class="link-projeto-codigo-fonte">Codigo
-                        Fonte</a>
-                </div>
+                <a href="https://github.com/lucasmateusdevpro" class="linckContatos">
+                    <img src="assets/favicon/github.png" alt="GitHub" class="imgContatos">
+                </a>
+                <a href="" class="linckContatos">
+                    <img src="assets/favicon/instagram.png" alt="GitHub" class="imgContatos">
+                </a>
+                <a href="" class="linckContatos">
+                    <img src="assets/favicon/linkedin.png" alt="GitHub" class="imgContatos">
+                </a>
+                <a href="https://github.com/lucasmateusdevpro" class="linckContatos">
+                    <img src="assets/favicon/whatsapp.png" alt="GitHub" class="imgContatos">
+                </a>
 
             </div>
+        </div>
+    </head>
 
-            <div class="container-projeto">
+ 
+    <main id="projetos">
 
-                <!-- Projeto 3 -->
+        <section class="container-projetos">
 
-                <div class="projeto">
-                    <p class="projeto-titulo">Via Mobile</p>
-                    <a href="assets/projetos/Via Mobile/index.html"><img class="projeto-img"
-                            src="assets/projetos/Via Mobile/img/Captura de tela 2025-04-24 005405.png" alt=""></a>
-                    <p class="projeto-descricao">Este foi um dos meus primeiros sites feitos, porem ele passou por
-                        algumas
-                        atualizações e também já esta responsivo, por ser apenas um modelo de apresentação ele não
-                        possui
-                        funções uteis nos botões</p>
-                    <a href="assets/projetos/Via Mobile/codigo html-css.txt" class="link-projeto-codigo-fonte">Codigo
-                        Fonte</a>
-                </div>
+            <ul class="ul-projetos">
+                <p class="titulo-prjetos">Projetos</p>
 
-                <!-- Projeto 4 -->
 
-                <div class="projeto">
-                    <p class="projeto-titulo">conversor de moedas</p>
-                    <a href="assets/projetos/conversor de moedas/index.html"><img class="projeto-img"
-                            src="assets/projetos/conversor de moedas/img/Captura de tela .png" alt=""></a>
-                    <p class="projeto-descricao"> Este projeto ja é um pouco mais avansado, porque ele foi um dos meus primeiros projetos onde foi usado o JavaScript, ele ja esta funcional, e tambem tem como fazer contas, porem as moedas ainda não são os valores de mercado. </p>
-                    <a href="assets/projetos/conversor de moedas/Codigo fonte.txt"
-                        class="link-projeto-codigo-fonte">Codigo
-                        Fonte</a>
-                </div>
-            </div>
+                <!-- Projetos 1 -->
+
+
+                <li>
+                    <div class="li-projetos" id="liProjetos1">
+
+                        <img id="imgProjeto1" class="img-projetos"
+                            src="assets/projetos/conversor de moedas/img/Captura de tela .png"
+                            alt="img-Conversor de moedas">
+
+                        <div class="div-projetos">
+                            <a href="assets/projetos/conversor de moedas/index.html">
+
+                                <p class="titulo-projetos-li" id="tituloProjeto1">Conversor de Moedas
+                                    <span id="spanProjeto1"
+                                        style=" display: inline-block; background-color: transparent; font-size: 20px; ">
+                                        ➔
+                                    </span>
+                                </p>
+
+                                <p class="texto-projetos">
+                                    Este foi um dos meus projetos desenvolvidos no curso DevClub, ele
+                                    é um conversor de moedas, onde você pode escolher de qual moeda quer converter, este
+                                    projeto não usa APIs, porem são valores reais então pode haver algumas alteração em
+                                    comparação com os valores atuais.</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Projetos 2 -->
+
+                <li>
+                    <div class="li-projetos" id="liProjetos2">
+
+                        <img id="imgProjeto2" class="img-projetos"
+                            src="assets/projetos/sorteador de numeros/img/Captura de tela 2025-05-13 032642.png"
+                            alt="img-Conversor de moedas">
+
+                        <div class="div-projetos">
+                            <a href="assets/projetos/sorteador de numeros/index.html">
+
+                                <p class="titulo-projetos-li" id="tituloProjeto2">Sorteador de Numeros
+                                    <span id="spanProjeto2"
+                                        style=" display: inline-block; background-color: transparent; font-size: 20px; ">
+                                        ➔
+                                    </span>
+                                </p>
+
+                                <p class="texto-projetos"> Neste projeto foi criado um sorteador de números, onde alguns
+                                    bags já foram resolvidos, nele você pode sortear qualquer numero que quiser, com um
+                                    histórico de números sorteados pra facilitar a visualização.</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+
+
+                <!-- Projetos 3 -->
+
+                <li>
+                    <div class="li-projetos" id="liProjetos3">
+
+                        <img id="imgProjeto3" class="img-projetos"
+                            src="assets/projetos/calculadora/Captura de tela 2025-05-09 034448.png"
+                            alt="img-Conversor de moedas">
+                        <div class="div-projetos">
+                            <a href="assets/projetos/calculadora/index.html">
+
+                                <p class="titulo-projetos-li" id="tituloProjeto3">Calculadora
+                                    <span id="spanProjeto3"
+                                        style=" display: inline-block; background-color: transparent; font-size: 20px; ">
+                                        ➔
+                                    </span>
+                                </p>
+
+                                <p class="texto-projetos">Neste projeto foi criado uma calculadora um pouco diferente
+                                    das
+                                    tradicionais, porem ela foi criada pra ser simples, e também fez parte do meu
+                                    aprendizado.</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Projetos 4 -->
+                <li>
+                    <div class="li-projetos" id="liProjetos4">
+
+                        <img id="imgProjeto4" class="img-projetos"
+                            src="assets/projetos/conversor de moedas/img/Captura de tela .png"
+                            alt="img-Conversor de moedas">
+
+                        <div class="div-projetos">
+                            <a href="assets/projetos/conversor de moedas/index.html">
+
+                                <p class="titulo-projetos-li" id="tituloProjeto4">Conversor de Moedas
+                                    <span id="spanProjeto4"
+                                        style=" display: inline-block; background-color: transparent; font-size: 20px; ">
+                                        ➔
+                                    </span>
+                                </p>
+
+                                <p class="texto-projetos">
+                                    Este foi um dos meus projetos desenvolvidos no curso DevClub, ele
+                                    é um conversor de moedas, onde você pode escolher de qual moeda quer converter, este
+                                    projeto não usa APIs, porem são valores reais então pode haver algumas alteração em
+                                    comparação com os valores atuais.</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+            <br>
         </section>
 
- <section class="section-projeto">
+        <div class="contatosResponsivo">
 
-            <div class="container-projeto">
+            <a href="https://github.com/lucasmateusdevpro" class="linckContatosResponsivo">
+                <img src="assets/favicon/github.png" alt="GitHub" style="width: 30px; margin: 10px;">
+            </a>
+            <a href="" class="linckContatosResponsivo">
+                <img src="assets/favicon/instagram.png" alt="GitHub" style="width: 30px; margin: 10px;">
+            </a>
+            <a href="" class="linckContatosResponsivo">
+                <img src="assets/favicon/linkedin.png" alt="GitHub" style="width: 30px; margin: 10px;">
+            </a>
+            <a href="https://github.com/lucasmateusdevpro" class="linckContatosResponsivo">
+                <img src="assets/favicon/whatsapp.png" alt="GitHub" style="width: 30px; margin: 10px;">
+            </a>
 
-                <!-- Projeto 1 -->
-
-                <div class="projeto">
-                    <p class="projeto-titulo">Calculadora</p>
-                    <a href="assets/projetos/calculadora/index.html"><img class="projeto-img"
-                            src="assets/projetos/calculadora/Captura de tela 2025-05-09 034448.png" alt=""></a>
-                    <p class="projeto-descricao">Este projeto ja é um pouco mais simples, porque ele foi um dos meus primeiros projetos onde foi usado o JavaScript, ele ja esta funcional, e tambem tem como fazer contas bem dinamicas, porem é uma calculadora onde usa os inpats de numeros.</p>
-                    <a href="assets/projetos/calculadora/codigo fonte.txt">Codigo
-                        Fonte</a>
-                </div>
-
-                <!-- Projeto 2 -->
-
-                <div class="projeto">
-                    <p class="projeto-titulo">sorteador de numeros</p>
-                    <a href="assets/projetos/sorteador de numeros/index.html"><img class="projeto-img"
-                            src="assets/projetos/sorteador de numeros/img/Captura de tela 2025-05-13 032642.png" alt=""></a>
-                    <p class="projeto-descricao">Neste projeto fiz um sorteador de umeros no qual voce consegue escolher o numero inical e o numero final, o interesante que os numeros que ja foram sorteados vão ficando a mostras na parte de baixo.</p>
-                    <a href="assets/projetos/sorteador de numeros/codigo fonte.txt"
-                        class="link-projeto-codigo-fonte">Codigo
-                        Fonte</a>
-                </div>
-
-            </div>
-
-            <div class="container-projeto">
-
-                <!-- Projeto 3 -->
-
-                <div class="projeto">
-                    <p class="projeto-titulo">----------</p>
-                    <a href="assets/projetos/About Your Pet/index.html"><img class="projeto-img"
-                            src="assets/projetos/About Your Pet/img/Captura de tela 2025-04-23 230832.png" alt=""></a>
-                    <p class="projeto-descricao">------------------</p>
-                    <a href="assets/projetos/About Your Pet/codigo html-css.txt"
-                        class="link-projeto-codigo-fonte">Codigo
-                        Fonte</a>
-                </div>
-
-                <!-- Projeto 4 -->
-
-                <div class="projeto">
-                    <p class="projeto-titulo">----------</p>
-                    <a href="assets/projetos/About Your Pet/index.html"><img class="projeto-img"
-                            src="assets/projetos/About Your Pet/img/Captura de tela 2025-04-23 230832.png" alt=""></a>
-                    <p class="projeto-descricao">------------------</p>
-                    <a href="assets/projetos/About Your Pet/codigo html-css.txt"
-                        class="link-projeto-codigo-fonte">Codigo
-                        Fonte</a>
-                </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
-    <img class="logo2" id="logo2" src="" style=" display: none">
-    <img class="logo1" id="logo1" src="" style=" display: none">
+
 </body>
+<script src="js/script.js"></script>
+<script src="js/animacao.js"></script>
 
 </html>
