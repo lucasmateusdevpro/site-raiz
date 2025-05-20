@@ -121,44 +121,45 @@ main {
 /* ------------------------------ projetos ------------------ */
 
 .img-projetos {
-     border-radius: 10px;
-     margin: 10px;
-     width: 180px;
-     height: 100px;
-     cursor: pointer;
- }
+    border-radius: 10px;
+    margin: 10px;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+}
 
- .ul-projetos {
+.ul-projetos {
 
-     text-align: left;
- }
+    text-align: left;
+}
 
- .li-projetos {
+.li-projetos {
     padding: 10px 30px 13px 10px;
     margin: 10px 0px 10px 0px;
-     align-items: center;
-     display: flex;
-     gap: 20px;
- }
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
 
- .div-projetos {
-     margin: 10px 0px 10px 10px;
-     background-color: transparent;
- }
+.div-projetos {
+    margin: 10px 0px 10px 10px;
+    background-color: transparent;
+}
 
 
- .titulo-projetos-li {
-     font-size: 27px;
-     background: transparent;
- }
+.titulo-projetos-li {
+    font-size: 27px;
+    background: transparent;
+}
 
- .texto-projetos {
-     color: #9c9b9b;
-     background-color: transparent;
- }
-#linkNovaProjetos{
-margin: 50px;
-font-size: 25px;
+.texto-projetos {
+    color: #9c9b9b;
+    background-color: transparent;
+}
+
+#linkNovaProjetos {
+    margin: 50px;
+    font-size: 25px;
 
 }
 
@@ -250,12 +251,12 @@ font-size: 25px;
 
 @media screen and (max-width:800px) {
     main {
-        text-align: center;
+        text-align: justify;
         width: 100%;
         height: 100%;
         z-index: 1;
         padding: 0px;
-        margin-top: 50px;
+        margin-top: 50px ;
     }
 
     .menu-lateral {
@@ -305,7 +306,11 @@ font-size: 25px;
 
     }
 
-    .linkNavegacao {
+    #linkSobre {
+        display: none;
+    }
+
+    #linkProjetos {
         display: none;
     }
 
@@ -335,11 +340,6 @@ font-size: 25px;
         font-size: 13px;
     }
 
-    #linkNovaProjetos {
-        margin: 50px;
-        font-size: 25px;
-    }
-
     .contatosResponsivo {
         width: 100%;
         display: inline-block;
@@ -347,15 +347,17 @@ font-size: 25px;
     }
 
     #linkNovaProjetos {
-        margin: 0px;
+        text-align: justify;
+        
+        margin: 50px 0px 0px 0px;
         font-size: 20px;
     }
+
     .li-projetos {
-    
+     margin: 0px;
         padding: 0px;
         text-align: center;
         margin: 0px;
-        align-items: center;
         display: block;
     }
 
