@@ -154,7 +154,6 @@ liProjetos3.addEventListener("mouseleave", function () {
 
 /*                                                   Eventos dos projetos 4 */
 
-
 liProjetos4.addEventListener("mouseenter", function () {
     document.getElementById("liProjetos4").style.backgroundColor = " #00000033 "
     document.getElementById("liProjetos4").style.borderRadius = " 10px "
@@ -173,12 +172,7 @@ liProjetos4.addEventListener("mouseleave", function () {
     document.getElementById("spanProjeto4").style.color = "rgb(255, 255, 255)"
 })
 
-
-
-
-
-
-
+/*                   eventos do linck ir para pagina de projetos */
 linkNovaProjetos.addEventListener("mouseenter", function () {
     document.getElementById("linkNovaProjetos").style.color = "rgba(56, 191, 248, 0.33)"
     document.getElementById("linkNovaProjetosSpan").style.color = "rgb(0, 179, 255)"
@@ -193,3 +187,13 @@ linkNovaProjetos.addEventListener("mouseleave", function () {
     document.getElementById("linkNovaProjetosSpan").style.transition = "transform 0.5s ease";
     document.getElementById("linkNovaProjetosSpan").style.transform = "translateX(0px)";
 })
+
+
+
+
+
+
+
+
+
+
