@@ -1,125 +1,128 @@
-
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
- * {
-     margin: 0px;
-     padding: 0px;
-     box-sizing: border-box;
-     text-decoration: none;
-     list-style-type: none;
-     font-family: "Ancizar Serif", serif;
-     background-color: #0F172A;
-     color: #ffffff;
- }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Ancizar Serif", serif;
+    background-color: #0F172A;
+    color: #ffffff;
+    user-select: none;
+}
 
- main {
+main {
     height: 100%;
-     z-index: 1; 
-    padding:5%  40px 50px  39%;
-     margin: 0px;
- }
+    z-index: 1;
+    padding: 5% 40px 50px 39%;
+    margin: 0px;
+}
 
 
 #fundoEfeito {
-  position: fixed;
-  width: 1200px;
-  height: 1200px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(56, 191, 248, 0.116), transparent 70%);
-  pointer-events: none;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  transition: transform 0.05s ease;
+    position: fixed;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(56, 191, 248, 0.116), transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s ease;
 }
 
+.contatosResponsivo {
+    display: none;
+}
 
- /* ------------------------------ Menu ------------------- */
- .menu-lateral {
+/* ------------------------------ Menu ------------------- */
+
+.menu-lateral {
     margin-top: 5%;
-     display: block;
-     position: fixed;
-     border: auto;
-     width: 30%;
-     height: 100%;
-     
- }
-.header-link{
-width: 130px;
+    display: block;
+    position: fixed;
+    border: auto;
+    width: 30%;
+    height: 100%;
 }
- .logo1 {
-    cursor: default;
-     font-size: 250%;
-     margin: 0px 10%;
-     color: #f1f1f1;
- }
 
- .logo2 {
-    cursor: default;
-     font-size: 100%;
-     margin: 0px 0px 0px 30%;
-     color: #d3d2d2;
- }
+.header-link {
+    width: 130px;
+}
 
- .logo3 {
-  cursor: default;
-     font-size: 100%;
-     margin: 30px 0px 150px 10%;
-     color: #9c9b9b;
- }
+.logo1 {
+    cursor: default;
+    font-size: 250%;
+    margin: 0px 10%;
+    color: #f1f1f1;
+}
+
+.logo2 {
+    cursor: default;
+    font-size: 100%;
+    margin: 0px 0px 0px 30%;
+    color: #d3d2d2;
+}
+
+.logo3 {
+    cursor: default;
+    font-size: 100%;
+    margin: 30px 0px 150px 10%;
+    color: #9c9b9b;
+}
+
 /*                     contatos */
-.linckContatos{
-    width: 35px;
-margin: 160px 0px auto 10%;
 
+.linckContatos {
+    width: 35px;
+    margin: 160px 0px auto 10%;
 }
-.imgContatos{
+
+.imgContatos {
     width: 30px;
 }
-.linckContatos:ative{
-opacity: 10%;
 
-}
-.linckContatos:hover{
-opacity: 70%;
-
+.linckContatos:ative {
+    opacity: 10%;
 }
 
- /* ------------------------------ sobre ------------------ */
+.linckContatos:hover {
+    opacity: 70%;
+}
 
- .titulo-sobre,
- .titulo-prjetos {
-     font-size: 30px;
-     margin: 0px 0px 10px 0px;
-     cursor: default;
- }
+/* ------------------------------ sobre ------------------ */
 
- .texto-sobre {
+.titulo-sobre,
+.titulo-prjetos {
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+    cursor: default;
+}
+
+.texto-sobre {
     opacity: 80%;
-     text-align: justify;
-     font-size: 21px;
-     margin: 0px 0px 30px 0px;
-     cursor: default;
- }
+    text-align: justify;
+    font-size: 21px;
+    margin: 0px 0px 30px 0px;
+    cursor: default;
+}
 
+.texto-sobre:hover {
+    transform: translateX(10px);
+}
 
- .texto-sobre:hover {
+.titulo-sobre:hover {
+    transform: translateX(10px);
+}
 
-     transform: translateX(10px);
- }
+/* ------------------------------ projetos ------------------ */
 
- .titulo-sobre:hover {
-
-     transform: translateX(10px);
- }
-
-
- /* ------------------------------ projetos ------------------ */
-
- .img-projetos {
+.img-projetos {
      border-radius: 10px;
-     margin-left: 5px;
+     margin: 10px;
      width: 180px;
      height: 100px;
      cursor: pointer;
@@ -135,12 +138,14 @@ opacity: 70%;
     margin: 10px 0px 10px 0px;
      align-items: center;
      display: flex;
+     gap: 20px;
  }
 
  .div-projetos {
      margin: 10px 0px 10px 10px;
      background-color: transparent;
  }
+
 
  .titulo-projetos-li {
      font-size: 27px;
@@ -157,119 +162,202 @@ font-size: 25px;
 
 }
 
-@media screen and (max-width:1370px) { 
-     main {   
-     z-index: 1; 
-    padding:5%  40px 50px  39%;
-     margin: 0px;
- }
- .linckContatos{
-margin: 140px 0px auto 30px;
-padding: 10px;
+#linkNovaProjetos {
+    margin: 50px;
+    font-size: 25px;
 }
- .titulo-sobre,
- .titulo-prjetos {
-     font-size: 27px;
-     margin: 0px 0px 10px 0px;
-     cursor: default;
- }
 
- .texto-sobre {
-    opacity: 80%;
-     text-align: justify;
-     font-size: 19px;
-     margin: 0px 0px 30px 0px;
-     cursor: default;
+/*                       Responsivo */
+@media screen and (max-width:1370px) {
+    main {
+        z-index: 1;
+        padding: 5% 40px 50px 39%;
+        margin: 0px;
+    }
+
+    .linckContatos {
+        margin: 140px 0px auto 30px;
+        padding: 10px;
+    }
+
+    .titulo-sobre,
+    .titulo-prjetos {
+        font-size: 27px;
+        margin: 0px 0px 10px 0px;
+        cursor: default;
+    }
+
+    .texto-sobre {
+        opacity: 80%;
+        text-align: justify;
+        font-size: 19px;
+        margin: 0px 0px 30px 0px;
+        cursor: default;
+
+    }
+
+    .img-projetos {
+        border-radius: 10px;
+        margin-left: 5px;
+        width: 150px;
+
+        cursor: pointer;
+    }
+
+    .li-projetos {
+        padding: 0px;
+        margin: 10px 0px 10px 0px;
+        align-items: center;
+        display: flex;
+    }
+
+    .titulo-projetos-li {
+        font-size: 23px;
+        background: transparent;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    main {
+        z-index: 1;
+        padding: 5% 40px 50px 39%;
+        margin: 0px;
+
+    }
+
+    .logo1 {
+        font-size: 150%;
+    }
+
+    .logo2 {
+        font-size: 50%;
+    }
+
+    .logo3 {
+        cursor: default;
+        font-size: 60%;
+        margin: 30px 0px 150px 10%;
+        color: #9c9b9b;
+    }
+
+    .linckContatos {
+        width: 28px;
+        margin: 300px 0px auto 10%;
+
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    main {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .menu-lateral {
+        margin-top: 5%;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .logo1 {
+        cursor: default;
+        font-size: 150%;
+        margin: 0px 10%;
+        color: #f1f1f1;
+    }
+
+    .logo2 {
+        cursor: default;
+        font-size: 100%;
+        margin: 0px 30px;
+        color: #d3d2d2;
+    }
+
+    .logo3 {
+        display: none;
+    }
+
+    .titulo-sobre,
+    .titulo-prjetos {
+        font-size: 23px;
+        margin: 0px 0px 10px 0px;
+        cursor: default;
+    }
+
+    .texto-sobre {
+        opacity: 80%;
+        text-align: justify;
+        font-size: 15px;
+        margin: 0px 0px 25px 0px;
+        cursor: default;
+    }
+
+    .linckContatos {
+        display: none;
+
+    }
+
+    .linkNavegacao {
+        display: none;
+    }
+
+    .container-sobre {
+        margin: 30px;
+    }
+
+    .container-projetos {
+        margin: 30px;
+    }
+
+    .img-projetos {
+        border-radius: 10px;
+        margin: 0px;
+        width: 100%;
+        height: 60%;
+        cursor: pointer;
+    }
+
+    .titulo-projetos-li {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .texto-projetos {
+        text-align: justify;
+        font-size: 13px;
+    }
+
+    #linkNovaProjetos {
+        margin: 50px;
+        font-size: 25px;
+    }
+
+    .contatosResponsivo {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #linkNovaProjetos {
+        margin: 0px;
+        font-size: 20px;
+    }
+    .li-projetos {
     
- }
- .img-projetos {
-     border-radius: 10px;
-     margin-left: 5px;
-     width: 150px;
-     
-     cursor: pointer;
- }
-  .li-projetos {
-    padding: 0px;
-    margin: 10px 0px 10px 0px;
-     align-items: center;
-     display: flex;
- }
-  .titulo-projetos-li {
-     font-size: 23px;
-     background: transparent;
- }
-}
-@media screen and (max-width:1025px){
-     main {   
-     z-index: 1; 
-    padding:5%  40px 50px  39%;
-     margin: 0px;
-    
-}
- .logo1 {
-     font-size: 150%;
- }
+        padding: 0px;
+        text-align: center;
+        margin: 0px;
+        align-items: center;
+        display: block;
+    }
 
- .logo2 {
-     font-size: 50%;
- }
 
- .logo3 {
-  cursor: default;
-     font-size: 60%;
-     margin: 30px 0px 150px 10%;
-     color: #9c9b9b;
- }
-.linckContatos{
-    width: 28px;
-margin: 560px 0px auto 10%;
-
-}
-}
-
-@media screen and (max-width:500px){
- .menu-lateral {
-    margin-top: 5%;
-     display: flex;
-     position: none;
-     border: 0px;
-     width: 30%;
-    
-     
- }
-  .container-sobre {
-     display: block;
-     margin-bottom: 0px;
- }
-
- .header-link{
-width: 130px;
-}
- .logo1 {
-    cursor: default;
-     font-size: 50%;
-     margin: 0px 10%;
-     color: #f1f1f1;
- }
-
- .logo2 {
-    cursor: default;
-     font-size: 100%;
-     margin: 0px 0px 0px 30%;
-     color: #d3d2d2;
- }
-
- .logo3 {
-  cursor: default;
-     font-size: 100%;
-     margin: 30px 0px 150px 10%;
-     color: #9c9b9b;
- }
-/*                     contatos */
-.linckContatos{
-    width: 35px;
-margin: 160px 0px auto 10%;
-
-}
 }
