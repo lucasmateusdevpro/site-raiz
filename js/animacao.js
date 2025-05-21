@@ -24,9 +24,37 @@ document.addEventListener("visibilitychange", () => {
 });
 
 
+/* let cor1 = "."
+let cor1 = "."
+let cor1 = "."
+
+ */
+const toggle = document.getElementById('toggleSwitch');
+
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+
+        cor1 = "rgba(56, 191, 248, 0.33)"
+
+
+      console.log('Ligado');
+    } else {
+cor1 = "rgb(238, 255, 0)"
+
+      console.log('Desligado');
+    }
+  }); 
 
 
 /* linck sobre eventos*/
+
+/* pré setar cor */
+
+
+
+
+
+
 /*                       Entrada dos Eventos sobre*/
 sobre.addEventListener("mouseenter", function () {
     document.getElementById("linkSobre").style.color = "rgba(56, 191, 248, 0.33)"
@@ -34,6 +62,7 @@ sobre.addEventListener("mouseenter", function () {
     document.getElementById("sobreLinha").style.color = "rgb(0, 179, 255)"
     document.getElementById("sobreLinha").style.transition = "transform 0.5s ease"
     document.getElementById("sobreLinha").style.transform = "translateX(30px)"
+    console.log(cor1)
 })
 
 linkSobre.addEventListener("mouseenter", function () {
@@ -115,7 +144,6 @@ liProjetos1.addEventListener("mouseleave", function () {
 })
 
 /*                                                   Eventos dos projetos 2 */
-
 
 liProjetos2.addEventListener("mouseenter", function () {
     document.getElementById("liProjetos2").style.backgroundColor = " #00000033 "

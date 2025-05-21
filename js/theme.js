@@ -1,6 +1,11 @@
 
 
 
+
+
+
+ 
+
 function selectCor1(valor) {
     const img1 = document.getElementById("logo1")
     const img2 = document.getElementById("logo2")
