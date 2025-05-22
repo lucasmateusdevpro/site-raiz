@@ -9,9 +9,15 @@ html {
     text-decoration: none;
     list-style-type: none;
     font-family: "Ancizar Serif", serif;
-    background-color: #0F172A;
-    color: #ffffff;
     user-select: none;
+
+
+ /*    background-color: #ffffff;
+    color: #030303;
+     */
+
+        background-color: #0F172A;
+    color: #ffffff;
 }
 
 main {
@@ -56,15 +62,15 @@ main {
 .logo1 {
     cursor: default;
     font-size: 250%;
-    margin: 0px 10%;
-    color: #f1f1f1;
+    margin: 0px 30px 0px 10%;
+    
 }
 
 .logo2 {
     cursor: default;
     font-size: 100%;
     margin: 0px 0px 0px 30%;
-    color: #d3d2d2;
+    
 }
 
 .logo3 {
@@ -90,6 +96,8 @@ main {
 }
 
 .linckContatos:hover {
+    
+    transform: scale(1.5);
     opacity: 70%;
 }
 
@@ -170,6 +178,16 @@ main {
 
 /*                       Responsivo */
 @media screen and (max-width:1370px) {
+    .logo1 {
+    cursor: default;
+    font-size: 200%;
+    margin: 0px 30px 0px 10%;
+}
+
+.buttonTheme{
+width: 50px;
+
+}
     main {
         z-index: 1;
         padding: 5% 40px 50px 39%;
@@ -249,7 +267,7 @@ main {
 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:860px) {
     main {
         text-align: justify;
         width: 100%;
@@ -259,6 +277,10 @@ main {
         margin-top: 50px ;
     }
 
+.buttonTheme{
+width: 100px;
+margin-left: 60%;
+}
     .menu-lateral {
         margin-top: 5%;
         display: block;
@@ -273,13 +295,14 @@ main {
         font-size: 150%;
         margin: 0px 10%;
         color: #f1f1f1;
+        width: 159px;
     }
 
     .logo2 {
         cursor: default;
-        font-size: 100%;
+        font-size: 50%;
         margin: 0px 30px;
-        color: #d3d2d2;
+        width: 140px;
     }
 
     .logo3 {
