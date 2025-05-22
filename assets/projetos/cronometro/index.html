@@ -11,41 +11,71 @@
 <body>
     <section>
         <h1>Cronometro</h1>
-        <h2 id="cronometro">0</h2>
+        <h2 id="cronometro"> <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span
+                id="millisecond">00</span></h2>
         <div>
-            <button id="iniciar" onclick="iniciar()">Iniciar</button>
-            <button id="parar" onclick="parar()"> Parar</button>
+            <button id="start" onclick="start()"> start</button>
+            <button onclick="pause()"> pause</button>
+            <button onclick="reset()"> reset</button>
         </div>
     </section>
+
 
 </body>
 <script>
 
-numero=0
-cronometro = document.getElementById("cronometro").innerText
+    let cron
+    let hour = 0
+    let minute = 0
+    let second = 0
+    let millisecond = 0
 
- function iniciar() {
+    function start() {
+        cron = setInterval(() => {
+            timer()
+            document.getElementById("start").disabled = true;
+            console.log(disable)
+        }, 10)
+    }
 
-setInterval(() => {
-    numero++
-    document.getElementById("cronometro").innerText = numero
+    function pause() {
+        clearInterval(cron)
+        document.getElementById("start").disabled = false;
+        console.log(disable)
+    }
+
+    function timer() {
+        if ((millisecond += 10) == 1000) {
+            millisecond = 0;
+            second++;
+        }
+        if (second == 60) {
+            second = 0;
+            minute++;
+        }
+        if (minute == 60) {
+            minute = 0;
+            hour++;
+        }
+        document.getElementById('hour').innerText = String(hour).padStart(2, '0');
+        document.getElementById('minute').innerText = String(minute).padStart(2, '0');
+        document.getElementById('second').innerText = String(second).padStart(2, '0');
+        document.getElementById('millisecond').innerText = String(millisecond).padStart(3, '0');
 
 
-}, 1000);
-
-
-
-
-    console.log("iniciar")
-    
- }
-function parar() {
-      clearInterval
-
-
-    console.log("parar")
-    
-}
+    }
+    second.padStart(2, "0") = second
+    function reset() {
+        hour = 0;
+        minute = 0;
+        second = 0;
+        millisecond = 0;
+        document.getElementById('hour').innerText = '00';
+        document.getElementById('minute').innerText = '00';
+        document.getElementById('second').innerText = '00';
+        document.getElementById('millisecond').innerText = '000';
+        pause()
+    }
 
 
 
