@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#fundoEfeito {
+    position: fixed;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #03030348, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s ease;
+}
+
+body {
+    cursor: url('data:image/x-icon;base64,AAACAAEAICACAAcAAwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAJAAAACIAAAAhAAAAIIAAACB/AAAgAIAAIAEAACACAAAgBAAAIAgAACAQAAAgIAAAIEAAACCAAAAhAAAAIgAAACQAAAA4AAAAAAAAAAAAAA///////////////////////////////////////////////////////////+f////D////wf///8D////Af///wAD//8AAf//AAP//wAH//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f/////////////8='), auto;
+}
+
+a, #menuContatoFlutuante, .bolha  {
+    cursor: url('data:image/x-icon;base64,AAACAAEAICAQAA8ABQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAgICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREREREAAAAAAAAAAAAAEiIiIiIiEAAAAAAAAAAAASAAAAAAACEAAAAAAAAAABIAAAAAAAACEAAAAAAAAAEAAAAAAAAAAhAAAAAAAAAQAAAAAAAAAAIQAAAAAAABIAAAAAAAAAACEAAAAAAAEAAAAAAAAAAAAhAAAAAAAQAAAAAAAAAAAAIQAAAAAAEAAAAAAAAAAAACEAAAAAAAEgAAAAAAAAAAAhAAAAAAAAEiIgAAAAAAAAAQAAAAAAAAEREgAAAAAAACEAAAAAAAAAABIAAAAAAAIQAAAAAAAAAAASAAIiIiIhAAAAAAAAAAAAEgACEREREAAAAAAAAAAAABIAAhAAAAAAAAAAAAAAAAASAAIQAAAAAAAAAAAAAAAAEgACEAAAAAAAAAAAAAAAABIAAhAAAAAAAAAAAAAAAAASAAIQAAAAAAAAAAAAAAAAASIhAAAAAAAAAAAAAAAAAAAREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////////////////////AB///gAP//wAB//4AAP/8AAD/+AAA//AAAP/gAAD/wAAA/8AAAP/gAAD/8AAA//gAAP//AAH//wAD//8AB///Af///wH///8B////Af///wH///+D////x//////////////////w=='), auto;
+}
+
+.background {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -2;
+}
+
+.backgroundFiltro {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    color: #B74AFC;
+    margin: 10px;
+    font-size: 50px;
+
+
+}
+
+.logo span {
+    color: #CCFAFC;
+    font-size: 34px;
+}
+
+.navegacaoHeader {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 37px;
+    gap: 50px;
+}
+
+.navegacaoHeader a {
+    color: #B74AFC;
+    display: inline-block;
+    position: relative;
+
+}
+
+.navegacaoHeader a::after {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #CBF9FF;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.navegacaoHeader a:hover::after {
+    color: #b84afc65;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:hover {
+    color: #b84afca0;
+}
+
+#menuContatoFlutuante {
+    visibility: /* visible */ hidden ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 56px;
+    height: 235px;
+    position: fixed;
+    bottom: 80px;
+    right: 28px;
+    background-color: #b84afc3d;
+    border-radius: 60px;
+    
+}
+#menuContatoFlutuante a:hover {
+    animation: piscar 0.5s infinite;
+   
+}
+.bolha {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle at center, #06060653, #4C0C8D);
+    border-radius: 50%;
+    box-shadow: 0 0 20px #2e830a;
+    animation: pulsar 2s infinite ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+}
+
+
+@keyframes piscar{
+
+    0%,
+    100% {
+        transform: scale(1);
+        
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        
+        opacity: 0.8;
+    }
+}
+
+
+@keyframes pulsar {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px #ff00e6;
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 40px #ffffff;
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,179 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header a {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+header img {
+  width: 40px;
+  margin: 15px;
+
+}
+
+.container-contatos {
+  width: 60%;
+
+
+}
+
+.container-video {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+
+}
+
+.mascara {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+button {
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: #c51111;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* Deixa o testo em maiusculo */
+  font-weight: bold;
+  /* deixa o texto em negrito */
+  margin-top: 20px;
+
+}
+
+.link-contatos img {
+  width: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+}
+
+p {
+
+  font-size: 18px;
+  color: white;
+
+}
+
+
+
+#formularioEntreEmContato {
+   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 17%;
+  left: -120%;  /*  visivel left: 50%; */
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid #c51111;
+  transform:translateX(-50%);
+  
+
+
+}
+
+#formularioEntreEmContato input {
+  
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  padding: 0px 15px 0px 15px;
+  border: 2px solid #c5111183;
+  border-radius: 10px;
+  outline-color:#47B341;
+}
+
+#formularioEntreEmContato textarea {
+   border-radius: 10px;
+  height: 90px;
+  width: 300px;
+  padding: 5px 15px 5px 15px;
+  font-size: 20px;
+  border: 2px solid #c5111183;
+  outline-color: #47B341;
+ 
+}
+#filtroOrcamento{
+ visibility: hidden;
+  width: 100%;
+  height: 100%;
+ background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+ position: fixed;
+ top: 0;
+}
+
+ button:hover {
+   opacity: 50%;
+   font-size: 14px;
+   border-radius: 6px;
+   color: #FFE406;
+   transition: 0.2s ease-in-out;
+ }
+
+ button:active {
+
+   opacity: 30%;
+   font-size: 15px;
+   border-radius: 6px;
+   color: #119DFE;
+   transition: 0.0s ease-in-out;
+ }
+
+ a:hover {
+   font-size: 26px;
+   opacity: 80%;
+   transition: 0.1s ease-in-out;
+   color: #c51111;
+
+ }
+
+ a:active {
+   font-size: 26px;
+   opacity: 50%;
+   transition: 0.1s ease-in-out;
+   color: #07B001;
+
+ }
