@@ -116,6 +116,7 @@ padding-top: 100px;
     justify-content: flex-end;
     font-size: 37px;
     gap: 50px;
+    text-shadow: 2px 4px 5px #b84afc90;
 }
 
 .navegacaoHeader a span {
