@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt.br">
+
 <head>
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
@@ -7,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
-    <title>Sobre</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre.css">
 </head>
+
 <body>
     <header>
         <h1 class="logo"> <span>
@@ -17,32 +20,64 @@
             </span> Lucas S.I.L</h1>
         <div class="navegacaoHeader">
             <a href="index.html">Home </a>
-            <a href="#">Sobre</a>
+            <a href="sobro.html"><span>Sobre</span></a>
             <a href="#">Projetos</a>
         </div>
     </header>
-    <main>
+<main>
 
-                    <h2>Sobre</h2>
+<h2>Sobre</h2>
+<span class="grifar"></span>
+<span class="cor"></span>
+
+<p>Olá! Meu nome é Lucas Mateus de Souza Infante Leal, tenho 30 anos e atualmente resido em Santa Fé do Sul, São Paulo. Sou casado há 9 anos e pai de uma menina linda de 9 meses, que tem sido mais uma inspiração para seguir em frente e construir um futuro sólido.</p>
+
+<p>Recentemente, decidi fazer uma mudança significativa na minha vida e retomar um antigo sonho: seguir carreira como desenvolvedor Full Stack. Desde então, venho mergulhando intensamente nos estudos. Neste primeiro momento, estou focado no Front-End, trabalhando com HTML, CSS e JavaScript, buscando entender bem a base antes de avançar para o Back-End e outras tecnologias. Meu objetivo é evoluir continuamente até me tornar um desenvolvedor Full Stack completo — e, a partir daí, explorar novos caminhos dentro da tecnologia.</p>
+
+<p>Minha paixão por tecnologia começou cedo. Aos 13 ou 14 anos, ganhei meu primeiro computador e logo comecei a modificar sua aparência — alterando cores de páginas como Google, Orkut, YouTube e outras. Naquela época, tudo era novidade, e eu queria entender como tudo funcionava por trás das telas. Também era muito envolvido com jogos, especialmente o Mu DKT, onde tive meu primeiro contato com o mundo dos "hackers" e bugs, algo que, embora hoje eu veja como um erro, acabou despertando ainda mais meu interesse por sistemas e códigos.</p>
+
+<p>Por volta dos 21 ou 22 anos, iniciei meu primeiro projeto de programação real com Arduino. Comecei com um simples LED piscando, mas em pouco tempo, com uma placa ESP32 e um módulo relé, desenvolvi um sistema que controlava toda a iluminação da minha casa via web local — com um site próprio rodando diretamente na placa. Usei esse sistema por anos com muito orgulho.</p>
+
+<p>Com o tempo, no entanto, a vida tomou outros rumos. Acabei me afastando da área de tecnologia e explorando novos caminhos profissionais: trabalhei em frigorífico, tentei a carreira de modelo, atuei em supermercados e hoje trabalho como técnico em fibra óptica. Cada experiência me trouxe aprendizados importantes, mas nenhuma delas conseguiu apagar aquela chama que a tecnologia sempre manteve acesa dentro de mim.</p>
+
+<p>Foi justamente essa paixão que me trouxe de volta. Hoje, com mais maturidade, responsabilidade e motivação, estou determinado a transformar essa vocação em carreira. Meu foco agora é migrar de vez para o desenvolvimento web ou de software, aprendendo, evoluindo e construindo soluções reais — com a mesma empolgação que tive naquele primeiro projeto com a luz piscando.</p>
+
+<span class="curriculo">Curriculo:<a href="assets/images/img-sobre.jpeg" download> Click aqui</a></span>
+</main>
 
 
 
 
-    </main>
-    <footer   id="menuContatosFlutuante" >
+
+
+    <footer id="menuContatosFlutuante">
         <div id="menuContatoFlutuante">
-           <a href=""><img src="assets/favicon/icons8-whatsapp.svg" alt="" style="width: 45px;"></a>
-           <a href=""><img src="assets/favicon/icons8-linkedin.svg" alt="" style="width: 45px;"></a>
-           <a href=""><img src="assets/favicon/icons8-gmail-novo.svg" alt="" style="width: 45px;"></a>
-           <a href=""><img src="assets/favicon/icons8-github.svg" alt="" style="width: 45px;"></a>
+            <a href="https://w.app/hfpjtz"><img src="assets/favicon/icons8-whatsapp.svg" alt=""
+                    style="width: 45px;"></a>
+            <a href="https://www.linkedin.com/in/lucasmateusdevpro/"><img src="assets/favicon/icons8-linkedin.svg"
+                    alt="" style="width: 45px;"></a>
+            <a href="mailto:lucas.mateus.devpro@gmail.com"><img src="assets/favicon/icons8-gmail-novo.svg" alt=""
+                    style="width: 45px;"></a>
+            <a href="https://github.com/lucasmateusdevpro"><img src="assets/favicon/icons8-github.svg" alt=""
+                    style="width: 45px;"></a>
         </div>
-        <div class="bolha"  >
+        <div class="bolha">
             <img id="bolha" src="assets/favicon/icons8-contatos-500.svg" style=" width: 40px;">
         </div>
     </footer>
+
+    <button id="buttonMenuResponsivo" onclick="menuResponsivoButton()"><img src="assets/favicon/bottonMenu.svg" alt="menu" style="width: 40px;"></button>
+    <div onclick="backgroundFiltro()" id="menuResponsivoLink">
+            <a class="linkMenuResponsivo" href="index.html">Home </a>
+            <a class="linkMenuResponsivo" href="#" style=" text-decoration: underline;">Sobre</a>
+            <a class="linkMenuResponsivo" href="#">Projetos</a>
+
+    </div>
+    <div id="fundoLogo"></div>
     <div id="fundoEfeito"></div>
-    <div class="backgroundFiltro"></div>
+    <div class="backgroundFiltro" onclick="backgroundFiltro()"></div>
     <img class="background" src="assets/favicon/background.png" alt="">
 </body>
 <script src="js/script.js"></script>
+
 </html>
