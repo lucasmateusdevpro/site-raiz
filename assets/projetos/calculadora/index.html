@@ -12,22 +12,23 @@
 <body>
     <div class="container">
         <h1>Calculadora</h1>
-        <div class="inputs">
+        <div>
 
-            <input id="campo1" placeholder="000000" type="number">
-            <input id="campo2" placeholder="000000" type="number">
+            <input class="inputs" id="campo1" placeholder="000000" type="number">
+            <input class="inputs" id="campo2" placeholder="000000" type="number">
 
         </div>
         <div class="div-resultado">
             <h2 id="resultado">Resultado</h2>
+        </div>
+        <div class="botoes">
 
-        </div class="botoes">
+            <button class="button" onclick="pegarValormais()">+</button>
+            <button class="button" onclick="pegarValormenos()">-</button>
+            <button class="button" onclick="pegarValorvezes()">*</button>
+            <button class="button" onclick="pegarValordividir()">/</button>
 
-        <button class="button" onclick="pegarValormais()">+</button>
-        <button class="button" onclick="pegarValormenos()">-</button>
-        <button class="button" onclick="pegarValorvezes()">*</button>
-        <button class="button" onclick="pegarValordividir()">/</button>
-
+        </div>
 
     </div>
 </body>

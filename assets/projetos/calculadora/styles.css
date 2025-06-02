@@ -1,53 +1,55 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    background-color: black;
+    color: red;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
+h1 {
+    color: red;
+    font-size: 60px;
+    margin: 100px auto 50px auto;
+}
 
-.container{
-    margin: 50px;
-    background-color: rgb(32, 32, 32);
-    width: 900px;
-    height: auto;
+.inputs {
+    color: red;
     align-items: center;
     text-align: center;
-
-}
-.inputs{
-    margin:50px auto 50px auto;
-    display: block ;
-}
-input{
-    font-size: 50px;
-    text-align: center;
-    width: 200px;
-    height: 60px;
-    padding: auto;
-    margin: 20px;
-}
-
-.div-resultado{
-    color: white;
-    font-size: 50px;
-   padding: 40px;
-}
-
-button{
-    font-size: 50px;
-    color: white;
-    background-color: red;
-    height: 60px;
-    width: 60px;
-    margin: 40px;
-}
-
-h1{
-    color: white;
-     font-size: 100px;
-    padding: 40px;
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px ;
+font-size: 25px;
+border-color: rgba(255, 0, 0, 0.517) ;
 }
 .botoes{
-    display: flex;
+display: flex;
+font-size: 30px;
+}
+button{
+    width: 80px;
+    height: 40px;
+    border-color: rgba(255, 0, 0, 0.517) ;
+    margin: 10px;
+    cursor: pointer;
+}
+.div-resultado{
+font-size: 30px;
+margin: 30px;
+
+}
+button:hover{
+    opacity: 50%;
+}
+button:active{
+    opacity: 30px;
 }

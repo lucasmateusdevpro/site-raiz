@@ -9,63 +9,64 @@ main {
 }
 
 main h2 {
-     margin: 30px;
+    margin: 30px;
     font-size: 40px;
     text-shadow: 2px 4px 5px #eeeeee7d;
 }
 
 
 main p {
-font-size: 29px;
-margin: 25px 100px 0px 100px;
-justify-content:center;
-text-transform: initial;
-align-items: start;
-text-shadow: 2px 4px 5px #eeeeee96;
+    font-size: 29px;
+    margin: 25px 100px 0px 100px;
+    justify-content: center;
+    text-transform: initial;
+    align-items: start;
+    text-shadow: 2px 4px 5px #eeeeee96;
 }
 
-main p:hover{
-color: #ccfafcdf;
+main p:hover {
+    color: #ccfafcdf;
 
 }
-main h2:hover{
-color: #ccfafcdf;
+
+main h2:hover {
+    color: #ccfafcdf;
 }
- .curriculo {
+
+.curriculo {
     font-size: 30px;
     color: #ccfafcdf;
     margin: 30px;
     text-shadow: 2px 4px 5px #eeeeee96;
- }
-.curriculo a{
+}
+
+.curriculo a {
     font-size: 30px;
-    color: #b84afc73;
+    color: #ff01d5;
     margin: 10px;
 }
-.curriculo a:hover{
+
+.curriculo a:hover {
     font-size: 30px;
-    color: #B74AFC;
+    color: #ff01d58c;
     transition: 0.3s;
     text-shadow: 2px 4px 5px #eeeeee96;
 }
 
+.cor {
+    color: #d598fb;
+}
+
+.grifarECor {
+    color: #ff01d5;
+    text-decoration: underline #B74AFC;
+}
 
 
 @media (max-width:1000px) {
-main p {
-font-size: 27px;
-margin: 25px 35px 0px 35px;
-}
-#fundoLogo{
-    position: fixed;
-    top: 0;
-    left: 0;
-width: 100vw;
-height: 55px;
-backdrop-filter: blur(2px);
-}
+    main p {
+        font-size: 27px;
+        margin: 25px 35px 0px 35px;
+    }
 
-
-
-    
 }

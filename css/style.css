@@ -6,7 +6,7 @@
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
-    
+
 }
 
 #fundoEfeito {
@@ -41,8 +41,8 @@ a,
 }
 
 .backgroundFiltro {
-    
-background: radial-gradient(circle, rgba(2, 2, 2, 0.294) 0%, rgba(0, 0, 0, 0.79) 90%);
+
+    background: radial-gradient(circle, rgba(2, 2, 2, 0.294) 0%, rgba(0, 0, 0, 0.79) 90%);
     min-width: 100%;
     min-height: 100%;
     position: fixed;
@@ -58,39 +58,39 @@ header {
 }
 
 #buttonMenuResponsivo {
-    
-    visibility: hidden ;
+
+    visibility: hidden;
     position: fixed;
     top: 17px;
     left: 20px;
     background-color: #02020200;
     border: none;
     z-index: 2;
-    
+
 }
 
-#menuResponsivoLink{
-visibility: hidden;
-position: fixed;
-top: 0;
-left: -1200;
-width: 30%;
-height: 100%;
-background-color: #ccfafc3a;
-z-index: 1;
-transition: left 1s;
-backdrop-filter: blur(2px);
-padding-top: 100px;
+#menuResponsivoLink {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -1200;
+    width: 40%;
+    height: 100%;
+    background-color: #ccfafc3a;
+    z-index: 1;
+    transition: left 1s;
+    backdrop-filter: blur(5px);
+    padding-top: 100px;
 }
 
-.linkMenuResponsivo{
+.linkMenuResponsivo {
     display: flex;
     flex-direction: column;
     align-items: center;
-     font-size: 35px;
-     color: #080121;
-     padding: 10px;
-     
+    font-size: 35px;
+    color: #ccfafcdf;
+    padding: 10px;
+
 
 }
 
@@ -110,7 +110,7 @@ padding-top: 100px;
 }
 
 .navegacaoHeader {
-    visibility: visible ;
+    visibility: visible;
     width: 70%;
     display: flex;
     justify-content: flex-end;
@@ -163,7 +163,7 @@ a span:hover {
 }
 
 #menuContatoFlutuante {
-    visibility:hidden;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,7 +195,7 @@ a span:hover {
     position: fixed;
     bottom: 20px;
     right: 30px;
-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
 }
 
 
@@ -230,28 +230,41 @@ backdrop-filter: blur(9px);
         transform: scale(1.2);
         box-shadow: 0 0 40px #ffffff;
         opacity: 0.8;
-        backdrop-filter: blur(9px);    }
+        backdrop-filter: blur(9px);
+    }
 }
 
 @media (max-width: 1000px) {
-.logo {
-position: fixed;
-top: 0px;
-right:10px ;
-font-size: 40px;
-}
-.navegacaoHeader {
-    visibility: hidden; 
-}
 
-#menuResponsivoLink{
-visibility:visible;
-left: -400px;
+    #fundoLogo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 55px;
+        backdrop-filter: blur(4px);
+    }
 
-}
-#buttonMenuResponsivo {
-    
-    visibility: visible;
-}
+    .logo {
+        position: fixed;
+        top: 0px;
+        right: 10px;
+        font-size: 40px;
+    }
+
+    .navegacaoHeader {
+        visibility: hidden;
+    }
+
+    #menuResponsivoLink {
+        visibility: visible;
+        left: -400px;
+
+    }
+
+    #buttonMenuResponsivo {
+
+        visibility: visible;
+    }
 
 }

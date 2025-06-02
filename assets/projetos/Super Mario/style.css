@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
-  
+
 }
 
 main {
@@ -32,7 +32,13 @@ header img {
   margin: 15px;
 
 }
+.logoMarioELuidi{
+  height: 500px;
+}
+.logoSuperMarioBros{
+height: 200px;
 
+}
 .container-contatos {
   width: 60%;
 
@@ -98,82 +104,130 @@ p {
 
 
 #formularioEntreEmContato {
-   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
   display: flex;
   flex-direction: column;
   position: fixed;
   bottom: 17%;
-  left: -120%;  /*  visivel left: 50%; */
+  left: -120%;
+  /*  visivel left: 50%; */
   padding: 20px;
   border-radius: 10px;
   align-items: center;
   gap: 20px;
   border: 2px solid #c51111;
-  transform:translateX(-50%);
-  
+  transform: translateX(-50%);
+
 
 
 }
 
 #formularioEntreEmContato input {
-  
+
   height: 40px;
   width: 300px;
   font-size: 20px;
   padding: 0px 15px 0px 15px;
   border: 2px solid #c5111183;
   border-radius: 10px;
-  outline-color:#47B341;
+  outline-color: #47B341;
 }
 
 #formularioEntreEmContato textarea {
-   border-radius: 10px;
+  border-radius: 10px;
   height: 90px;
   width: 300px;
   padding: 5px 15px 5px 15px;
   font-size: 20px;
   border: 2px solid #c5111183;
   outline-color: #47B341;
- 
+
 }
-#filtroOrcamento{
- visibility: hidden;
+
+#filtroOrcamento {
+  visibility: hidden;
   width: 100%;
   height: 100%;
- background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
- position: fixed;
- top: 0;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  position: fixed;
+  top: 0;
 }
 
- button:hover {
-   opacity: 50%;
-   font-size: 14px;
-   border-radius: 6px;
-   color: #FFE406;
-   transition: 0.2s ease-in-out;
- }
+button:hover {
+  opacity: 50%;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #FFE406;
+  transition: 0.2s ease-in-out;
+}
 
- button:active {
+button:active {
 
-   opacity: 30%;
-   font-size: 15px;
-   border-radius: 6px;
-   color: #119DFE;
-   transition: 0.0s ease-in-out;
- }
+  opacity: 30%;
+  font-size: 15px;
+  border-radius: 6px;
+  color: #119DFE;
+  transition: 0.0s ease-in-out;
+}
 
- a:hover {
-   font-size: 26px;
-   opacity: 80%;
-   transition: 0.1s ease-in-out;
-   color: #c51111;
+a:hover {
+  font-size: 26px;
+  opacity: 80%;
+  transition: 0.1s ease-in-out;
+  color: #c51111;
 
- }
+}
 
- a:active {
-   font-size: 26px;
-   opacity: 50%;
-   transition: 0.1s ease-in-out;
-   color: #07B001;
+a:active {
+  font-size: 26px;
+  opacity: 50%;
+  transition: 0.1s ease-in-out;
+  color: #07B001;
 
- }
+}
+
+@media (max-width:950px) {
+
+  p {
+    display: none;
+
+  }
+
+  main {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: auto;
+  }
+
+  header {
+    display: none;
+    align-items: center;
+    gap: 10px;
+  }
+.logoMarioELuidi{
+  
+  height: 300px;
+  margin: 40px auto 10px auto;
+}
+.logoSuperMarioBros{
+margin: 10px;
+
+}
+.container-contatos{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+align-items: center;
+text-align: center;
+width: 100%;
+
+}
+.DivLogoMarioELuidi{
+align-items: center;
+text-align: center;
+width: 100%;
+
+}
+}
