@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+
+}
+
+
+.container {
+    background-color: rgba(171, 232, 247, 0.306);
+    width: 400px;
+    height: 520px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.numeros-digitados-div {
+    background-color: rgba(255, 253, 253, 0.265);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding: 10px 20px 10px 10px;
+
+    width: 400px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.div-numeros {
+    display: flex;
+
+}
+
+.container-numeros {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-t1 {
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    margin: 2.5px;
+    font-size: 40px;
+     background-color: rgba(255, 253, 253, 0.265);
+     cursor: pointer;
+}
+
+.button-t2 {
+    width: 75px;
+    height: 145px;
+    border-radius: 10px;
+    border: none;
+    margin: 2.5px;
+    font-size: 40px;
+     background-color: rgba(255, 253, 253, 0.265);
+     cursor: pointer;
+}
+
+.button-t3 {
+    width: 205px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    margin: 2.5px;
+    font-size: 40px;
+     background-color: rgba(255, 253, 253, 0.265);
+     cursor: pointer;
+}
+
+.button-t4 {
+    width: 75px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    margin: 2.5px;
+    font-size: 40px;
+     background-color: rgba(255, 253, 253, 0.265);
+     cursor: pointer;
+}
+
+#resultado {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#numeroDigitado {
+    font-size: 35px;
+}
+
+#operadorTela{
+
+    position: fixed;
+    margin-right: 340px;
+    margin-top: 15px;
+ font-size: 40px;
+ 
+    
+}
+button:hover{
+
+    opacity: 50%;
+}
+button:active{
+
+    opacity: 30%;
+}
