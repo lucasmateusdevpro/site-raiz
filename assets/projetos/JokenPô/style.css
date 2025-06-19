@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.myLogo {
+    cursor: context-menu;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    
+}
+
+.result{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.398);
+z-index: -2;
+
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: url(https://picsum.photos/1600/900);
+    background-size: cover;
+}
+
+.container {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid rgba(239, 239, 239, 0.303);
+    background: rgba(49, 49, 49, 0.609);
+}
+
+h1 {
+    cursor: context-menu;
+    font-size: 40px;
+    margin: 20px 30px 20px 30px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 60px;
+    border-radius: 50%;
+     border: 2px solid transparent;
+    margin: 20px;
+    transition: opacity 0.2s ease-in-out;
+
+}
+
+p {
+    font-weight: bolder;
+    cursor: context-menu;
+    font-size: 30px;
+    margin: 10px auto 5px auto;
+}
+
+#pedra {
+    background-color: #b040ff;
+}
+
+#papel {
+    background-color: #51ff48;
+}
+
+#tesoura {
+    background-color: #4358fb;
+}
+
+#pointsOpponent {
+    
+    color: rgb(249, 64, 64);
+}
+
+#myPoints {
+    color: #4358fb;
+}
+
+
+button:hover {
+    opacity: 70%;
+    border: 2px solid rgba(7, 7, 7, 0.44);
+
+}
