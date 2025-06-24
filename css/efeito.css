@@ -1,0 +1,284 @@
+.minhaFotoDiv {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    right: 10%;
+
+}
+.meuTextoDiv{
+
+      border: 1px solid #ff07c582;
+    
+    border-radius: 30px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 35%;
+    right: 40%;
+
+
+}
+.meuTextoDiv2{
+
+
+     background-color: #a39ab744;
+      border: 1px solid #ff07c582;
+    border-radius: 30px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 490px;
+    height: 190px;
+
+
+
+}
+
+.meuTexto{
+    color: #acf5fc;
+    font-size: 34px;
+    z-index: 3;
+
+}
+.meuTexto span{
+    color: #acf5fc;
+    font-size: 39px;
+    z-index: 3;
+    animation: visibility 0.7s alternate infinite;
+
+}
+.minhaFoto {
+    position: fixed;
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+    z-index: 11;
+}
+
+.tecnologiasLogo{
+    padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+    
+}
+
+.div {
+    position: fixed;
+    width: 205px;
+    height: 220px;
+    border-radius: 50%;
+
+    background: radial-gradient(circle, rgba(162, 91, 182, 0.85) 0%, rgba(147, 184, 188, 0.73) 100%);
+    box-shadow: 0 0 100px 50px rgba(255, 80, 200, 0.329);
+
+    animation: girar 5s linear infinite;
+    z-index: 9;
+}
+
+
+
+.div1 {
+    position: fixed;
+    height: 250px;
+    width: 280px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #ff07c582;
+    box-shadow: 0 0 30px 15px #6b2b9879;
+    border-radius: 50%;
+    animation: girar 6s linear infinite;
+    z-index: 8;
+
+
+}
+
+.div2 {
+    position: fixed;
+    height: 280px;
+    width: 250px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #9bbdbd82;
+    box-shadow: 0 0 30px 5px #9bbdbd7f;
+    border-radius: 50%;
+    animation: girar 7s linear infinite;
+    animation-name: camada 7s linear infinite;
+
+}
+
+.div3 {
+    position: fixed;
+    height: 250px;
+    width: 280px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #0e545080;
+    box-shadow: 0 0 30px 5px #0e54507e;
+    border-radius: 50%;
+    animation: girar 8s linear infinite;
+    animation-name: camada 5s linear infinite;
+
+}
+
+.div4 {
+    position: fixed;
+    height: 280px;
+    width: 250px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #7faac978;
+    box-shadow: 0 0 30px 5px #7faac97a;
+    border-radius: 50%;
+    animation: girar 9s linear infinite;
+    animation-name: camada 6s linear infinite;
+
+}
+
+.div5 {
+    position: fixed;
+    height: 250px;
+    width: 280px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #40088f7d;
+    box-shadow: 0 0 30px 5px #40088f6f;
+    border-radius: 50%;
+    animation: girar 10s linear infinite;
+    animation-name: camada 7s linear infinite;
+
+}
+
+.div6 {
+    position: fixed;
+    height: 280px;
+    width: 250px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #13137076;
+    box-shadow: 0 0 30px 5px #13137072;
+    border-radius: 50%;
+    animation: girar 11s linear infinite;
+
+
+}
+
+.div7 {
+    position: fixed;
+    height: 250px;
+    width: 280px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #0010297b;
+    box-shadow: 0 0 30px 5px #00102976;
+    border-radius: 50%;
+    animation: girar 12s linear infinite;
+    animation-name: camada 6s linear infinite;
+
+}
+
+.div8 {
+    position: fixed;
+    height: 280px;
+    width: 250px;
+    border-radius: 50%;
+
+    border: 1px solid #00529f82;
+    background-color: #00529f82;
+    box-shadow: 0 0 30px 5px #00529f7e;
+    border-radius: 50%;
+    animation: girar 13s linear infinite;
+    animation-name: camada 7s linear infinite;
+
+}
+
+.div9 {
+    position: fixed;
+    height: 250px;
+    width: 280px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #23002d83;
+    box-shadow: 0 0 30px 5px #23002d;
+    border-radius: 50%;
+    animation: girar 14s linear infinite;
+    z-index: 10;
+
+}
+
+.div10 {
+    position: fixed;
+    height: 280px;
+    width: 250px;
+    border-radius: 50%;
+
+    border: 1px solid #ff07c582;
+    background-color: #246b6676;
+    box-shadow: 0 0 30px 5px #246b668e;
+    border-radius: 50%;
+    animation: girar 15s linear infinite;
+    z-index: 10;
+
+
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes camada {
+    0% {
+        z-index: 1;
+    }
+
+    25% {
+        z-index: 5;
+    }
+
+    50% {
+        z-index: 8;
+    }
+
+    100% {
+        z-index: 3;
+    }
+
+}
+
+@keyframes visibility{
+0%{
+   opacity: 0;
+}
+
+50%{
+    opacity: 0.5;
+}
+100%{
+    opacity: 1;
+}
+
+}

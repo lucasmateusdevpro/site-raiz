@@ -21,6 +21,7 @@
     transition: transform 0.05s ease;
 }
 
+
 body {
     cursor: url('data:image/x-icon;base64,AAACAAEAICACAAcAAwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAJAAAACIAAAAhAAAAIIAAACB/AAAgAIAAIAEAACACAAAgBAAAIAgAACAQAAAgIAAAIEAAACCAAAAhAAAAIgAAACQAAAA4AAAAAAAAAAAAAA///////////////////////////////////////////////////////////+f////D////wf///8D////Af///wAD//8AAf//AAP//wAH//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f/////////////8='), auto;
 }
@@ -198,35 +199,7 @@ a span:hover {
     backdrop-filter: blur(9px);
 }
 
-.minhaFoto{
-     border: 5px solid #0001109a;
-    width: 250px;
-    border-radius: 50% ;
-position: fixed;
-top:165px;
-right: 145px;
-z-index: 11;
-}
 
-.minhaFotoDiv1{
-  border: 5px solid #000110d0;
-background: linear-gradient(90deg, rgba(117, 25, 175, 0.429) 0%, rgba(31, 29, 126, 0.411) 50%, rgba(149, 189, 190, 0.563) 100%);
-
-
-    width: 1000px;
-    height: 300px ;
-    
-border-bottom-right-radius: 150px ;
-border-top-right-radius: 150px ;
-border-bottom-left-radius: 50px ;
-border-top-left-radius: 50px ;
-
-position: fixed;
-top:140px;
-right: 123px;
-z-index: 10;
-
-}
 
 
 @keyframes piscar {
