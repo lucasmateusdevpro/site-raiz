@@ -39,45 +39,34 @@ menuFlutuante.addEventListener("mouseleave", () => {
     }, 1000)
 })
 
+// Seleciona todos os blocos de projeto
+const projetos = document.querySelectorAll(".projeto")
 
+projetos.forEach(function(projeto) {
+    // Captura os elementos internos usando querySelector relativo ao projeto
+    const span   = projeto.querySelector(".seta")
+    const titulo = projeto.querySelector(".titulo")
+    const imagem = projeto.querySelector(".imagem")
 
+    // Evento de mouseenter
+    projeto.addEventListener("mouseenter", function () {
+        span.style.visibility = "visible"
+        span.style.transition = "transform 0.5s ease"
+        span.style.transform = "translateX(30px)"
+        titulo.style.color = "#B74AFC"
+        imagem.style.border = "3px solid #B74AFC"
+    })
 
-  /* Esta função cuida do menu lateral */
-
-/* const entrada = "0px"
-const saida = "-400px"
-
-menu.addEventListener("mouseenter", () => {
-        document.getElementById("menuResponsivoLink").style.left = saida
-    document.getElementById("buttonMenuResponsivo").style.visibility = "visible"
-
-    console.log(menu)
+    // Evento de mouseleave
+    projeto.addEventListener("mouseleave", function () {
+        span.style.visibility = "hidden"
+        span.style.transition = "transform 0.5s ease"
+        span.style.transform = "translateX(0px)"
+        titulo.style.color = "#CCFAFC"
+        imagem.style.border = "3px solid #CCFAFC"
+    })
 })
 
-function menuResponsivoButton() {
-    document.getElementById("menuResponsivoLink").style.left = entrada
-    document.getElementById("buttonMenuResponsivo").style.visibility = "hidden"
-}
-
-function backgroundFiltro() {
-  if (window.innerWidth >= 1000) { */
-    // Executa somente em telas menores que 1000px
-/*     document.getElementById("buttonMenuResponsivo").style.visibility = "hidden";
-}else{
-        document.getElementById("menuResponsivoLink").style.left = saida
-    document.getElementById("buttonMenuResponsivo").style.visibility = "visible"
-}}
-
-window.addEventListener("resize", () => {
-    if (window.innerWidth < 1000) { */
-        /* console.log("Tela menor que 1000px — modo mobile") */        
-/*         document.getElementById("buttonMenuResponsivo").style.visibility = "visible"
-    } else { */
-        /* console.log("Tela maior que 1000px — modo desktop") */
-       /*  document.getElementById("menuResponsivoLink").style.left = saida
-        document.getElementById("buttonMenuResponsivo").style.visibility = "hidden"
-    }
-}); */
 const entrada = "0px";
 const saida = "-400px";
 

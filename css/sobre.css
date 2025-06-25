@@ -1,6 +1,7 @@
 /* main */
 
 main {
+     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,30 +10,39 @@ main {
 }
 
 main h2 {
-    margin: 30px;
-    font-size: 40px;
-    text-shadow: 2px 4px 5px #eeeeee7d;
-}
 
+    font-size: 42px;
+    color: #CBF9FF;
+    text-shadow: 0 2px 4px #000;
+}
 
 main p {
-    font-size: 29px;
-    margin: 25px 100px 0px 100px;
-    justify-content: center;
-    text-transform: initial;
-    align-items: start;
-    text-shadow: 2px 4px 5px #eeeeee96;
+    font-size: 20px;
+    color: #ccfaffb9;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-main p:hover {
-    color: #ccfafcdf;
+.sonbre-texto{
+
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #b74afc40;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px #b84afc30;
+    max-width: 800px;
+
+
 
 }
-
-main h2:hover {
-    color: #ccfafcdf;
-}
-
 .curriculo {
     font-size: 30px;
     color: #ccfafcdf;
@@ -63,10 +73,3 @@ main h2:hover {
 }
 
 
-@media (max-width:1000px) {
-    main p {
-        font-size: 27px;
-        margin: 25px 35px 0px 35px;
-    }
-
-}

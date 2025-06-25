@@ -29,7 +29,7 @@ body {
 a,
 #menuContatoFlutuante,
 .bolha,
-.menuResponsivoButton {
+.menuResponsivoButton,button {
     cursor: url('data:image/x-icon;base64,AAACAAEAICAQAA8ABQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAgICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREREREAAAAAAAAAAAAAEiIiIiIiEAAAAAAAAAAAASAAAAAAACEAAAAAAAAAABIAAAAAAAACEAAAAAAAAAEAAAAAAAAAAhAAAAAAAAAQAAAAAAAAAAIQAAAAAAABIAAAAAAAAAACEAAAAAAAEAAAAAAAAAAAAhAAAAAAAQAAAAAAAAAAAAIQAAAAAAEAAAAAAAAAAAACEAAAAAAAEgAAAAAAAAAAAhAAAAAAAAEiIgAAAAAAAAAQAAAAAAAAEREgAAAAAAACEAAAAAAAAAABIAAAAAAAIQAAAAAAAAAAASAAIiIiIhAAAAAAAAAAAAEgACEREREAAAAAAAAAAAABIAAhAAAAAAAAAAAAAAAAASAAIQAAAAAAAAAAAAAAAAEgACEAAAAAAAAAAAAAAAABIAAhAAAAAAAAAAAAAAAAASAAIQAAAAAAAAAAAAAAAAASIhAAAAAAAAAAAAAAAAAAAREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////////////////////AB///gAP//wAB//4AAP/8AAD/+AAA//AAAP/gAAD/wAAA/8AAAP/gAAD/8AAA//gAAP//AAH//wAD//8AB///Af///wH///8B////Af///wH///+D////x//////////////////w=='), auto;
 }
 
@@ -55,6 +55,7 @@ a,
 header {
     display: flex;
     align-items: center;
+     z-index: 10;
 
 }
 
@@ -82,6 +83,7 @@ header {
     transition: left 1s;
     backdrop-filter: blur(5px);
     padding-top: 100px;
+    z-index: 10;
 }
 
 .linkMenuResponsivo {
@@ -101,13 +103,14 @@ header {
     font-size: 50px;
     z-index: 2;
     text-shadow: 2px 4px 5px #b84afc90;
+     z-index: 10;
 }
 
 .logo span {
     color: #CCFAFC;
     font-size: 34px;
     z-index: 3;
-
+ z-index: 10;
 }
 
 .navegacaoHeader {
@@ -118,6 +121,7 @@ header {
     font-size: 37px;
     gap: 50px;
     text-shadow: 2px 4px 5px #b84afc90;
+     z-index: 10;
 }
 
 .navegacaoHeader a span {
@@ -177,7 +181,7 @@ a span:hover {
     right: 28px;
     background-color: #b84afc3d;
     border-radius: 60px;
-
+ z-index: 10;
 }
 
 #menuContatoFlutuante a:hover {
@@ -197,10 +201,104 @@ a span:hover {
     bottom: 20px;
     right: 30px;
     backdrop-filter: blur(9px);
+     z-index: 10;
+}
+
+#bolha {
+    position: fixed;
+    bottom: 6px;
+    right: 5px;
+    color: #B74AFC;
+
+ z-index: 10;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #b74afc40;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px #b84afc30;
+    max-width: 600px;
+}
+
+.foto-com-camadas {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #cbf9ff;
+    box-shadow: 0 0 20px #b74afc;
+    object-fit: cover;
+}
+
+.brilho-circular {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(183, 74, 252, 0.4), transparent 80%);
+    animation: pulsar 3s ease-in-out infinite;
+    z-index: -1;
+}
+
+.mensagem-bemvindo h1 {
+    font-size: 42px;
+    color: #CBF9FF;
+    text-shadow: 0 2px 4px #000;
 }
 
 
+.mensagem-bemvindo p {
+    font-size: 20px;
+    color: #ccfaffb9;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.tecnologias img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px #B74AFC90);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tecnologias img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 10px #CBF9FF);
+}
 
 @keyframes piscar {
 
@@ -246,6 +344,7 @@ a span:hover {
         width: 100vw;
         height: 55px;
         backdrop-filter: blur(4px);
+        
     }
 
     .logo {
@@ -253,10 +352,12 @@ a span:hover {
         top: 0px;
         right: 10px;
         font-size: 40px;
+
     }
 
     .navegacaoHeader {
         visibility: hidden;
+         z-index: 10;
     }
 
     #menuResponsivoLink {
