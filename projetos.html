@@ -27,46 +27,55 @@
         </div>
     </header>
     <main>
-
-
-
         <div class="container-projetos">
-            <h2>Projetos</h2>     
 
-                 <div class="container-select">
-                      <button class="button-select"><p class="texto-select">Todos <span>▼</span></p></button>
-                      <div class="container-options">
-                        <button class="button-options">Todos</button>
-                        <button class="button-options">Novos</button>
-                        <button class="button-options">Antigos</button>
+                <h2>Projetos</h2>
 
-                      </div>
+                <div class="container-select">
+                    <button class="button-select" onclick="buttonSelect()">
+                        <p class="texto-select">Todos <span>▼</span></p>
+                    </button>
+                    <div class="container-options">
 
-                 </div>
+                    <button class="button-options" onclick="options('Todos')">Todos</button>
+                    <button class="button-options" onclick="options('Novos')">Novos</button>
+                    <button class="button-options" onclick="options('Antigos')">Antigos</button>
+
+                    </div>
+                </div>
+           
 
 
 
 
 
             <ul>
-                <li class="projeto">
 
+                <li class="projeto">
                     <a href="assets/projetos/Super Mario/index.html">
                         <h3 class="titulo">Super Mario <span class="seta"> → </span></h3>
-                        <img src="assets/projetos/Super Mario/assets/Captura de tela 2025-05-27 224840.png"
+                        <img src="assets/projetos/sorteador de numeros/img/Captura de tela 2025-05-13 032642.png"
                             alt="Super mario" class="imagem" />
                     </a>
+               </li> 
+                               <li class="projeto">
+                    <a href="assets/projetos/sorteador de numeros/index.html">
+                        <h3 class="titulo">Sorteador de Numeros <span class="seta"> → </span></h3>
+                        <img src="assets/projetos/Super Mario/assets/print.png"
+                            alt="Super mario" class="imagem" />
+                    </a>
+               </li>  
 
-                </li>
-                
+
+
+
+
+
+
+
+
             </ul>
-
-
-
-
         </div>
-
-
     </main>
 
     <footer id="menuContatosFlutuante">
@@ -98,7 +107,8 @@
     <div class="backgroundFiltro" onclick="backgroundFiltro()"></div>
     <img class="background" src="assets/favicon/background.png" alt="">
 </body>
-<script src="js/script.js"></script>
 <script src="js/projetos.js"></script>
+<script src="js/script.js"></script>
+<script src="js/efeitos.js"></script>
 
 </html>

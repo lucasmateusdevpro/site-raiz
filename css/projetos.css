@@ -31,7 +31,7 @@ main img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 3px solid #CCFAFC;
+    border: 1px solid #CCFAFC;
     transition: border 0.5s;
 
 }
@@ -43,7 +43,7 @@ main a {
 }
 
 .container-projetos {
-     margin-top: 50px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,18 +57,18 @@ main a {
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px #b84afc30;
     max-width: 1200px;
-    
+
     min-height: 520px;
     margin-bottom: 0px;
 
 }
 
-ul{
-    
+ul {
+
     align-items: center;
     justify-content: center;
     display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     text-align: center;
     gap: 30px;
 
@@ -76,7 +76,7 @@ ul{
 
 
 li {
-   display: grid;
+    display: grid;
     text-align: left;
     padding: 10px;
     background: rgba(255, 255, 255, 0.05);
@@ -97,68 +97,86 @@ h3 {
     transition: color 0.5s;
 }
 
-.container-select{
-visibility: visible;
-position: fixed;
-right: 10%;
-top: 43px;
+
+.container-select {
+    visibility: visible;
+    position: fixed;
+    right: 10%;
+    top: 43px;
 
 }
-.texto-select{
 
-
-}
-.container-options{
+.container-options {
     visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid #b74afc40;
-     border-radius: 10px;
-     gap: 5px;
-     padding: 5px;
-
-}
-.button-select{
     border-radius: 10px;
- border: 1px solid #b74afc40;
- width: 150px;
+    gap: 5px;
+    padding: 5px;
+    z-index: 10;
 
 }
 
-.button-options:hover{
+.button-select {
+    border-radius: 10px;
+    border: 1px solid #b74afc40;
+    width: 150px;
+
+}
+
+.button-select:hover {
+
+    border-radius: 10px;
+    border: 1px solid #b74afc40;
+    background: rgba(255, 255, 255, 0.05);
+
+}
+
+.button-options:hover {
     width: 100%;
-        border-radius: 10px;
- border: 1px solid #b74afc40;
-background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid #b74afc40;
+    background: rgba(255, 255, 255, 0.05);
 
 }
-button{ 
-        font-size: 24px;
+
+button {
+    width: 100%;
+    font-size: 24px;
     color: #ccfaffb9;
     border: none;
     background: none;
 
 }
-button span{
 
-font-size: 10px ;
+button span {
 
-}
-
-@media (max-width: 600px) {
-.container-select{
-visibility: visible;
-position: fixed;
-right: 30px;
-top: 43px;
+    font-size: 10px;
 
 }
-.container-projetos h2{
-justify-content: left;
-text-align: left;
 
+@media (max-width: 671px) {
+    .container-select {
+        visibility: visible;
+        position: fixed;
+        right: 30px;
+        top: 43px;
 
+    }
 }
-    
+
+@media (max-width: 500px) {
+    h2 {
+        position: fixed;
+        top: 29px;
+        left: 30px;
+    }
+
+    .container-projetos {
+        padding-top: 100px;
+    }
+
+
 }

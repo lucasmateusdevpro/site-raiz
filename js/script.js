@@ -1,106 +1,64 @@
-/* efeitos mause */
+/* efeitos dos botoes de seleção dos projetos */
 
-const efeito = document.getElementById('fundoEfeito');
+//abre o menu
+function buttonSelect() {
+    document.querySelector(".container-options").style.visibility = "visible"
 
-document.addEventListener('mousemove', (e) => {
-    efeito.style.left = `${e.clientX}px`;
-    efeito.style.top = `${e.clientY}px`;
-});
+}
 
-
-const tituloOriginal = document.title;
-
-document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-        document.title = "🚷 Volta aqui! 🚷";
-    } else {
-        document.title = "🎉 Que bom que voltou!";
-
-        // Volta ao título original depois de 2 segundos
-        setTimeout(() => {
-            document.title = tituloOriginal;
-        }, 2000);
-    }
-})
-
-let menuFlutuante = document.getElementById("menuContatosFlutuante")
-let tempo
-
-menuFlutuante.addEventListener("mouseenter", () => {
-    document.getElementById("menuContatoFlutuante").style.visibility = "visible"
-
-
-    clearTimeout(tempo)
-});
-
-menuFlutuante.addEventListener("mouseleave", () => {
-    tempo = setTimeout(() => {
-        document.getElementById("menuContatoFlutuante").style.visibility = "hidden"
-    }, 1000)
-})
-
-// Seleciona todos os blocos de projeto
-const projetos = document.querySelectorAll(".projeto")
-
-projetos.forEach(function(projeto) {
-    // Captura os elementos internos usando querySelector relativo ao projeto
-    const span   = projeto.querySelector(".seta")
-    const titulo = projeto.querySelector(".titulo")
-    const imagem = projeto.querySelector(".imagem")
-
-    // Evento de mouseenter
-    projeto.addEventListener("mouseenter", function () {
-        span.style.visibility = "visible"
-        span.style.transition = "transform 0.5s ease"
-        span.style.transform = "translateX(30px)"
-        titulo.style.color = "#B74AFC"
-        imagem.style.border = "3px solid #B74AFC"
-    })
-
-    // Evento de mouseleave
-    projeto.addEventListener("mouseleave", function () {
-        span.style.visibility = "hidden"
-        span.style.transition = "transform 0.5s ease"
-        span.style.transform = "translateX(0px)"
-        titulo.style.color = "#CCFAFC"
-        imagem.style.border = "3px solid #CCFAFC"
-    })
-})
-
-const entrada = "0px";
-const saida = "-400px";
-
-// Alternar o menu ao clicar no botão
-document.getElementById("buttonMenuResponsivo").addEventListener("click", () => {
-    document.getElementById("menuResponsivoLink").style.left = entrada;
-    document.getElementById("buttonMenuResponsivo").style.visibility = "hidden";
-});
-
-// Clique fora do menu fecha ele
 document.addEventListener("click", (e) => {
-    const menu = document.getElementById("menuResponsivoLink");
-    const botao = document.getElementById("buttonMenuResponsivo");
+    const select = document.querySelector(".container-select")
+    const options = document.querySelector(".container-options")
+
 
     // Se o clique NÃO foi dentro do menu nem no botão, fecha
-    if (!menu.contains(e.target) && !botao.contains(e.target)) {
-        if (window.innerWidth < 1000) {
-            menu.style.left = saida;
-            botao.style.visibility = "visible";
+    if (!select.contains(e.target) && !options.contains(e.target)) {
+        if (window.innerWidth < 10000) {
+            options.style.visibility = "hidden"
         }
     }
 });
 
-// Quando a tela redimensiona
-window.addEventListener("resize", () => {
-    const menu = document.getElementById("menuResponsivoLink");
-    const botao = document.getElementById("buttonMenuResponsivo");
 
-    if (window.innerWidth >= 1000) {
-        // Esconde o botão e o menu (modo desktop)
-        menu.style.left = saida;
-        botao.style.visibility = "hidden";
-    } else {
-        // Mostra o botão (modo mobile)
-        botao.style.visibility = "visible";
-    }
+let containerOptions = document.querySelector(".container-options")
+let textoButonSelect = document.querySelector(".texto-select")
+
+function options(value) {
+    containerOptions.style.visibility = "hidden"
+    textoButonSelect.innerHTML = ` ${value} <span> ▼</span>`
+
+}
+
+
+
+const list = document.querySelector("ul")
+
+
+
+listaDeProdutos.forEach(produtos => {
+
+list.innerHTML += `
+  <li class="projeto">
+    <a href="${produtos.href}">
+      <h3 class="titulo">${produtos.titulo} <span class="seta"> → </span></h3>
+      <img src="${produtos.src}" alt="${produtos.titulo}" class="imagem" />
+    </a>
+  </li>
+`
+    
 });
+
+
+
+
+
+
+
+
+
+
+
+console.log(list)
+console.log(listaDeProdutos)
+
+

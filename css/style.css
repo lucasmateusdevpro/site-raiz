@@ -16,7 +16,7 @@
     border-radius: 50%;
     background: radial-gradient(circle, #03030348, transparent 70%);
     pointer-events: none;
-    z-index: 1;
+    z-index: 30;
     transform: translate(-50%, -50%);
     transition: transform 0.05s ease;
 }
@@ -78,7 +78,8 @@ header {
     left: -1200;
     width: 40%;
     height: 100%;
-    background-color: #ccfafc3a;
+        background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid #b74afc40;
     z-index: 1;
     transition: left 1s;
     backdrop-filter: blur(5px);
@@ -90,9 +91,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 35px;
-    color: #ccfafcdf;
     padding: 10px;
+
+        font-size: 42px;
+    color: #CBF9FF;
+    text-shadow: 0 2px 4px #000;
 
 
 }
@@ -179,9 +182,11 @@ a span:hover {
     position: fixed;
     bottom: 80px;
     right: 28px;
-    background-color: #b84afc3d;
     border-radius: 60px;
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid #b74afc40;
  z-index: 10;
+ backdrop-filter: blur(3px);
 }
 
 #menuContatoFlutuante a:hover {
@@ -344,6 +349,7 @@ a span:hover {
         width: 100vw;
         height: 55px;
         backdrop-filter: blur(4px);
+        z-index: 3;
         
     }
 
@@ -367,7 +373,7 @@ a span:hover {
     }
 
     #buttonMenuResponsivo {
-
+        z-index: 5;
         visibility: visible;
     }
 

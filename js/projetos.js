@@ -1,20 +1,37 @@
 
 
-const menuOptions = [
+const listaDeProdutos = [
 
 
- { nome: 'Super Mario', img:'assets/projetos/Super Mario/assets/Captura de tela 2025-05-27 224840.png ',url:'assets/projetos/Super Mario/index.html',  data:'27-05-2025'},   
+{ href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
+ 
+ { href:'assets/projetos/sorteador de numeros/index.html', titulo:'Sorteador de Numeros', src:'assets/projetos/sorteador de numeros/img/Captura de tela 2025-05-13 032642.png'},  
 
-{ name: 'X-Salada', price: 30, vegan: false, src: './img/xsalada.jpeg' },
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
+ 
+{ href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
+ 
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
 
-{ name: 'X-Bacon', price: 34, vegan: false, src: './img/xbacon.png' },
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'}, 
 
-{ name: 'X-Bacon Egg', price: 39, vegan: false, src: './img/bacon-egg.png' },
 
-{ name: 'Monstruoso', price: 50, vegan: false, src: './img/monstruoso.png' },
+{ href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
+ 
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
 
-{ name: 'Big Vegano', price: 55, vegan: true, src: './img/xvegan.png' },
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'}, 
 
-{ name: 'X-Vegan', price: 45, vegan: true, src: './img/monstruoso-vegan.png' },
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
+ 
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
 
-]
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'}, 
+
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
+ 
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'},  
+
+ { href:'assets/projetos/Super Mario/index.html', titulo:'Super Mario', src:'assets/projetos/Super Mario/assets/print.png'}, 
+
+ ]
