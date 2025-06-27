@@ -115,4 +115,64 @@ window.addEventListener("resize", () => {
     }
 });
 
+/* Efieto dos itens aparecendo na tela */
+
+const elementos = document.querySelectorAll('.scroll-reveal');
+
+  function revelarAoScroll() {
+    const alturaTela = window.innerHeight;
+
+    elementos.forEach(el => {
+      const distanciaTopo = el.getBoundingClientRect().top;
+
+      if (distanciaTopo < alturaTela - 100) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revelarAoScroll);
+  window.addEventListener('load', revelarAoScroll); // chama quando carrega
+
+
+  /* botão voltar ao topo */
+
+    const topButton = document.getElementById("topButton");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+
+   const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 60) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+
+
 

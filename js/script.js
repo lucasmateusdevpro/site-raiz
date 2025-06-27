@@ -32,21 +32,30 @@ function options(value) {
 
 
 const list = document.querySelector("ul")
+let numeroDeProjetos = document.querySelector(".numero-de-projetos")
+let contador = 0
 
+
+/* function options(botao){ */
 
 
 listaDeProdutos.forEach(produtos => {
-
+ 
 list.innerHTML += `
-  <li class="projeto">
+  <li class="projeto scroll-reveal">
     <a href="${produtos.href}">
       <h3 class="titulo">${produtos.titulo} <span class="seta"> → </span></h3>
       <img src="${produtos.src}" alt="${produtos.titulo}" class="imagem" />
     </a>
   </li>
 `
-    
-});
+
+   contador += 1
+})
+
+numeroDeProjetos.innerHTML = contador
+/* } */
+console.log(contador)
 
 
 
@@ -58,7 +67,63 @@ list.innerHTML += `
 
 
 
-console.log(list)
-console.log(listaDeProdutos)
+
+
+
+
+
+
+
+
+
+
+/* const lista = document.querySelector("ul")
+const numeroPagina = document.querySelector("#numero-pagina");
+
+let paginaAtual = 1;
+const itensPorPagina = 6;
+
+function renderizarPagina() {
+  lista.innerHTML = "";
+
+  let inicio = (paginaAtual - 1) * itensPorPagina;
+  let fim = inicio + itensPorPagina;
+  let projetosPagina = listaDeProdutos.slice(inicio, fim);
+
+  projetosPagina.forEach(produtos => {
+    lista.innerHTML += `
+  <li class="projeto scroll-reveal">
+    <a href="${produtos.href}">
+      <h3 class="titulo">${produtos.titulo} <span class="seta"> → </span></h3>
+      <img src="${produtos.src}" alt="${produtos.titulo}" class="imagem" />
+    </a>
+  </li>
+`
+  });
+
+  numeroPagina.textContent = paginaAtual;
+}
+
+function trocarPagina(direcao) {
+  const totalPaginas = Math.ceil(listaDeProdutos.length / itensPorPagina);
+  paginaAtual += direcao;
+
+  if (paginaAtual < 1) paginaAtual = 1;
+  if (paginaAtual > totalPaginas) paginaAtual = totalPaginas;
+
+  renderizarPagina();
+}
+
+renderizarPagina();
+ */
+
+
+
+
+
+
+
+
+
 
 

@@ -43,7 +43,7 @@ main a {
 }
 
 .container-projetos {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,14 +57,14 @@ main a {
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px #b84afc30;
     max-width: 1200px;
-
-    min-height: 520px;
+    min-width: 700px;
+    min-height: 580px;
     margin-bottom: 0px;
 
 }
 
 ul {
-
+    margin-top: 30px;
     align-items: center;
     justify-content: center;
     display: grid;
@@ -115,19 +115,37 @@ h3 {
     border-radius: 10px;
     gap: 5px;
     padding: 5px;
-    z-index: 10;
+    z-index: 100;
 
 }
 
 .button-select {
+    z-index: 100;
     border-radius: 10px;
     border: 1px solid #b74afc40;
     width: 150px;
+    font-size: 24px;
+    color: #CBF9FF;
+    text-shadow: 0 2px 4px #000;
+    background: rgba(255, 255, 255, 0);
+
+}
+
+.button-options {
+    z-index: 100;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #b84afc00;
+    background: rgba(255, 255, 255, 0);
+    font-size: 24px;
+    color: #CBF9FF;
+    text-shadow: 0 2px 4px #000;
+
 
 }
 
 .button-select:hover {
-
+    z-index: 100;
     border-radius: 10px;
     border: 1px solid #b74afc40;
     background: rgba(255, 255, 255, 0.05);
@@ -135,6 +153,7 @@ h3 {
 }
 
 .button-options:hover {
+    z-index: 100;
     width: 100%;
     border-radius: 10px;
     border: 1px solid #b74afc40;
@@ -142,20 +161,23 @@ h3 {
 
 }
 
-button {
-    width: 100%;
-    font-size: 24px;
-    color: #ccfaffb9;
-    border: none;
-    background: none;
 
-}
 
-button span {
+.texto-select span {
 
     font-size: 10px;
 
 }
+
+.projeto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 @media (max-width: 671px) {
     .container-select {
@@ -164,6 +186,10 @@ button span {
         right: 30px;
         top: 43px;
 
+    }
+
+    .container-projetos {
+        min-width: 100px;
     }
 }
 
@@ -176,7 +202,6 @@ button span {
 
     .container-projetos {
         padding-top: 100px;
+        min-width: 100px;
     }
-
-
 }
