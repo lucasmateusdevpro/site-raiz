@@ -23,25 +23,23 @@ document.addEventListener("click", (e) => {
 let containerOptions = document.querySelector(".container-options")
 let textoButonSelect = document.querySelector(".texto-select")
 
-function options(value) {
-    containerOptions.style.visibility = "hidden"
-    textoButonSelect.innerHTML = ` ${value} <span> ▼</span>`
 
-}
 
 
 
 const list = document.querySelector("ul")
 let numeroDeProjetos = document.querySelector(".numero-de-projetos")
 let contador = 0
-
+let listTodos = ""
+let listNovos = ""
+let listAntigos = ""
 
 /* function options(botao){ */
 
 
 listaDeProdutos.forEach(produtos => {
  
-list.innerHTML += `
+listTodos += `
   <li class="projeto scroll-reveal">
     <a href="${produtos.href}">
       <h3 class="titulo">${produtos.titulo} <span class="seta"> → </span></h3>
@@ -51,17 +49,33 @@ list.innerHTML += `
 `
 
    contador += 1
+    
 })
 
-numeroDeProjetos.innerHTML = contador
-/* } */
-console.log(contador)
+
+options("Todos")
 
 
 
+function options(value) {
+    containerOptions.style.visibility = "hidden"
+    textoButonSelect.innerHTML = ` ${value} <span> ▼</span>`
 
+if (value ==="Todos"){
+ list.innerHTML  = listTodos
+  numeroDeProjetos.innerHTML = contador
+ 
+}
+if (value ==="Novos"){
+console.log("Novos")
+}
+if (value ==="Antigos"){
+console.log("Antigos")
+}
 
+}
 
+list.innerHTML
 
 
 
